@@ -11,4 +11,6 @@ I settled on my idea (a watch powered by a lipo battery with an e-paper display 
 
 Lapses: https://lapse.hackclub.com/timelapse/2YLNZjLKJ49O, https://lapse.hackclub.com/timelapse/AwMG_Jw_1pwr
 
-**Total time spent: 1 hour**
+![Beginning some work here](Journal/05-23-26.png)
+
+**Total time spent: 1 hour and 30 minutes**
