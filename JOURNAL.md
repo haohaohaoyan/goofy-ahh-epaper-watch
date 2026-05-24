@@ -13,4 +13,4 @@ Lapses: https://lapse.hackclub.com/timelapse/2YLNZjLKJ49O, https://lapse.hackclu
 
 ![Beginning some work here](Journal/05-23-26.png)
 
-**Total time spent: 1 hour and 30 minutes**
+**Total time spent: 1.5 hours**
