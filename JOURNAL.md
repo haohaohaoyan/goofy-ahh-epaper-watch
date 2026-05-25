@@ -14,3 +14,13 @@ Lapses: https://lapse.hackclub.com/timelapse/2YLNZjLKJ49O, https://lapse.hackclu
 ![Beginning some work here](Journal/05-23-26.png)
 
 **Total time spent: 1.5 hours**
+
+# 5/24: Pretty much finished up with the power circuit
+
+I gave up on swapping that battery charger/power path management IC (too many pins and I don't wanna deal with that now) and kept the earlier IC (the MCP73831-OT) and instead added two Schottky diodes that would automatically complete the circuit using the source currently active (power supplied from the USB-C input or the battery). Idea was yoinked from some guy on Reddit who was responding to someone with the exact same issue that I had, and also put up the possible issue that the diodes would reduce the battery voltage below 3.3V and make it unusable, so I went through like 20 resistor datasheets one by one before just Googling a low power loss diode and landing on the currently used ones. Everything for the power should be wired up right, but I sent it to the hardware channel on the HC Slack just in case. I'll also start off the README with a BOM so I won't forget anything. Thanks to Kai Pereira on the Slack for helping me with a question about the e-paper thing, which I'll hopefully be doing tomorrow.
+
+Lapse: https://lapse.hackclub.com/timelapse/NfazSZBNFMmf
+
+![Pretty much done with the power circuit](Journal/05-24-26.png)
+
+**Total time spent: 1 hour**
