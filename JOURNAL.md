@@ -24,3 +24,13 @@ Lapse: https://lapse.hackclub.com/timelapse/NfazSZBNFMmf
 ![Pretty much done with the power circuit](Journal/05-24-26.png)
 
 **Total time spent: 1 hour**
+
+# 5/25: E-paper display driver essentially done, figured out that I need an RTC IC
+
+I don't know how the e-paper drivers work, so I just shoved all of the main junk from the Waveshare e-paper driver HAT onto my PCB. Credits to them for the most part. Obviously, the compatibility switches were taken out because I only need one type of display. Also looked at Kai Pereira's Overglade badge to make sure that I really wasn't doing something stupid with this. It actually took a really long time to figure out exactly what pins to hook the data lines for the EPD to, because all of the ones on this ESP32 are named really confusing things (There were too many options and I didn't know what some were, just that they were SPI.) I also added an A & B button for controlling the watch and wired them to the two pins that weren't used in the middle of all of the currently used ones. The only thing left to do is get the real-time-clock thing settled, because I just realized that CircuitPython can't really keep track of time. I found a good IC for that, and I'll get it wired up tomorrow, if I don't have much schoolwork (which I shouldn't, because it's a party day.)
+
+Lapse: https://lapse.hackclub.com/timelapse/eFtLpvhWv_lq
+
+![E-paper display much original driver such wow](Journal/05-25-26.png)
+
+**Total time spent: 1.2 hours**
