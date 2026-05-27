@@ -34,3 +34,13 @@ Lapse: https://lapse.hackclub.com/timelapse/eFtLpvhWv_lq
 ![E-paper display much original driver such wow](Journal/05-25-26.png)
 
 **Total time spent: 1.2 hours**
+
+# 5/26: LDO added and some RTC connections
+
+I didn't really have much time today due to some other tasks. yas on the #hardware channel looked over my power circuit and pointed out that I was trying to wire 5V directly to the 3V3, which would probably have blown up the entire thing. I fixed that with an LDO IC that's hopefully small enough. I could make it smaller but I chose a moderately larger one because KiCad doesn't have another footprint currently. I also got some of the RTC connections down and made sure that it was compatible with CircuitPython (don't wanna learn c yet). Weirdly enough, like half of the pins on the RTC IC need pull-up resistors, which I haven't seen before. I'll finish that tomorrow. I'm also going to update the BOM to include the new and smaller components. 
+
+Lapse: https://lapse.hackclub.com/timelapse/BdzhmiEXduZc
+
+![Current RTC setup](Journal/05-26-26.png)
+
+**Total time spent: 0.3 hours**
