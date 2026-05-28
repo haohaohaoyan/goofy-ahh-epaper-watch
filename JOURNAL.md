@@ -44,3 +44,13 @@ Lapse: https://lapse.hackclub.com/timelapse/BdzhmiEXduZc
 ![Current RTC setup](Journal/05-26-26.png)
 
 **Total time spent: 0.3 hours**
+
+# 5/27: Finished with schematic, some footprint assigning
+
+The schematic is finished! I need to review it and make sure it won't instantly explode but everything should be done! I finished the RTC connections and connected some IO pins to what will be a perfboard-like devboard thing because I don't want all of those microcontroller capabilities to go to waste. The footprints are going to be a pain but I've started assigning a few. The worst part so far is having to make an EasyEDA account to rip footprints off parts that aren't in KiCad's libraries. 
+
+Lapse: https://lapse.hackclub.com/timelapse/oYHkt6sVn5RI
+
+![Full schematic!](Journal/05-27-26.png)
+
+**Total time spent: 0.5 hours**
