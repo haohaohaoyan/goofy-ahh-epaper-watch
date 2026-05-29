@@ -8235,7 +8235,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 195.58 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -8474,7 +8474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 223.52 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -9043,7 +9043,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 223.52 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -9359,7 +9359,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
 			(at 252.73 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9507,7 +9507,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7 uf?"
+		(property "Value" "4.7uf"
 			(at 233.172 141.224 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9518,7 +9518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 230.8352 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9597,7 +9597,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9676,7 +9676,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -10964,7 +10964,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -11034,7 +11034,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7 uf?"
+		(property "Value" "4.7uf"
 			(at 179.578 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11045,7 +11045,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 191.4652 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11985,7 +11985,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 241.3 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -12064,7 +12064,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 193.04 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -12231,7 +12231,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -12629,7 +12629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 234.95 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -12708,7 +12708,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -12787,7 +12787,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -12943,7 +12943,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 241.3 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -13101,7 +13101,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 182.88 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -13261,7 +13261,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 125.73 127 0)
 			(hide yes)
 			(show_name no)
@@ -13737,7 +13737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
 			(at 144.78 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -13991,7 +13991,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 240.03 81.28 0)
 			(hide yes)
 			(show_name no)

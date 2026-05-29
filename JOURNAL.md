@@ -54,3 +54,9 @@ Lapse: https://lapse.hackclub.com/timelapse/oYHkt6sVn5RI
 ![Full schematic!](Journal/05-27-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 5/28: Just a tad bit of footprint assignment
+
+No time today, and I wanted to keep my streak. I just assigned some more footprints today, tried to import a button footprint, and found a good one for all of the capacitors. Not much. No lapse because I didn't bother to make one.
+
+**Total time spent: 0.1 hours**
