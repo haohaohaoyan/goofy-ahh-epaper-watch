@@ -8641,7 +8641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Watch libraries:SW-SMD_L3.9-W3.0-P4.45 C455280"
 			(at 35.56 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -8723,7 +8723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 43.942 114.3 90)
 			(hide yes)
 			(show_name no)
@@ -8882,7 +8882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 47.498 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -9836,7 +9836,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 97.282 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -10885,7 +10885,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 184.15 31.242 90)
 			(hide yes)
 			(show_name no)
@@ -11124,7 +11124,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 184.15 43.688 90)
 			(hide yes)
 			(show_name no)
@@ -11519,7 +11519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 221.742 146.05 90)
 			(hide yes)
 			(show_name no)
@@ -11601,7 +11601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_FFC-FPC:Jushuo_AFC07-S24FCA-00_1x24-1MP_P0.50_Horizontal"
 			(at 256.54 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -11748,7 +11748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 90.932 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -11829,7 +11829,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 193.802 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -12471,7 +12471,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.092 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -12550,7 +12550,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Watch libraries:SW-SMD_L3.9-W3.0-P4.45 C455280"
 			(at 30.48 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -13022,7 +13022,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Watch libraries:SW-SMD_L3.9-W3.0-P4.45 C455280"
 			(at 35.56 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13419,7 +13419,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Changjiang_FNR6045S"
 			(at 200.66 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -13498,7 +13498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Watch libraries:SW-SMD_L3.9-W3.0-P4.45 C455280"
 			(at 30.48 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -13737,7 +13737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 144.78 54.61 0)
 			(hide yes)
 			(show_name no)

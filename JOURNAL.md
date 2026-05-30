@@ -62,3 +62,11 @@ No time today, and I wanted to keep my streak. I just assigned some more footpri
 ![Some footprint assignments](Journal/05-28-26.png)
 
 **Total time spent: 0.1 hours**
+
+# 5/29: Footprint assignment finished and starting on PCB
+
+End of year stuff's been going on, but I decided to pull some extra time to work. I actually finished all of the footprint assigning and started on the PCB! This is my favorite part, because I just need to think about placement and mindlessly wiring stuff together. I'll also need to write down those components because I am GOING to forget them. I still need to fix some components, such as choosing the wrong size for the IO pins and having a vertical USB-C plug instead of a horizontal USB-C receptacle, but I'll get to that tomorrow (during summer break YAYA). EVERY SINGLE LAST PIN on the 24-pin ribbon cable got detached because of pin value mismatch so I'm going to have to do that by hand later. I don't have a lapse today (was only going to make a small tweak but worked longer than I expected).
+
+![The PCB so far](Journal/05-29-26.png)
+
+**Total time spent: 0.5 hours**
