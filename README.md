@@ -6,7 +6,7 @@ planned features: epaper screen, 500mAh lipo battery, esp32 with internet connec
 ## BOM:
 
 - 1x ESP32 S3 MINI 1 microcontroller
-- 1x 500 mAh Lithium-ion polymer battery (the one at https://www.adafruit.com/product/1578)
+- 1x 2000 mAh Lithium-ion polymer battery ([the one at https://www.adafruit.com/product/1578](https://www.adafruit.com/product/2011))
 - 1.54 inch e-paper display (display only, without driver, the one at https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html probably)
 - 1x USB-C receptacle (exact component tbd, horizontal USB-C receptacle)
 - 4x push button (C455280 push button)
@@ -23,5 +23,5 @@ planned features: epaper screen, 500mAh lipo battery, esp32 with internet connec
 - 1x 3 ohm resistor
 - 1x 10k ohm resistor
 - 1x 500 ohm resistor 
-- 1x 68 uH inductor
+- 1x 68 uH inductor 
 - 5x CDBA340-HF Schottky diode
