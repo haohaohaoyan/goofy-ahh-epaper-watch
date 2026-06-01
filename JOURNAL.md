@@ -80,3 +80,13 @@ Lapse: https://lapse.hackclub.com/timelapse/GY0gmqQjs46F
 ![The PCB, almost complete](Journal/05-30-26.png)
 
 **Total time spent: 3.5 hours**
+
+# 5/31: Squeezed that last boot button in, made some silkscreen icons
+
+I actually got that last button in by rewiring the IO pin connections to give just enough space for it. Even then, I had to put its resistor pretty far and added 3 entire vias to deal with it because there were loads of things in the way, most prominently the battery covering 90% of the backside again. Since everything else is done now and I hopefully won't have to reload the schematic, I started renaming things, changing silkscreens, and adding icons. The IO pins were renamed for clarity and the ESP32 has its name fully written out because that looks really cool. I also added button names for those two IO buttons (that look kinda like the Game Boy ones on purpose), a lightning symbol next to the charging LED, and a silly star icon I have slapped onto like half everything I make. I really am so close to production, but I need to cover the back with silkscreens so it will look *beautiful*. 
+
+Lapse: https://lapse.hackclub.com/timelapse/xiC5fP980MSw
+
+![Wowee silkscreens](Journal/05-31-26.png)
+
+**Total time spent: 0.8 hours**

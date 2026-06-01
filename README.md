@@ -3,6 +3,16 @@
 readme unfinished
 planned features: epaper screen, 500mAh lipo battery, esp32 with internet connectivity for weather & time sync, two buttons for interacting, maybe IO spots for interacting with components
 
+Current features: 
+- 1.54 inch e-paper display
+- 2000 mAh Li-po battery which will give around 15-20 hours of battery life
+- USB-C charging and data transfer
+- ESP32 S3 MINI 1 powered, so it has internect connectivity
+- 8-pin IO row, with 1 ground, 1 3.3v, and 6 IO.
+- 2 IO buttons, labeled A and B in the style of the Game Boy
+- Reset and boot buttons for programming
+- Hopefully won't explode (IMPORTANT)
+
 ## BOM:
 
 - 1x ESP32 S3 MINI 1 microcontroller
