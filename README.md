@@ -21,7 +21,7 @@ Current features:
 - 1x USB-C receptacle (exact component tbd, horizontal USB-C receptacle)
 - 4x push button (C455280 push button)
 - 1x MCP73831-OT battery charging IC
-- 1x LP5907MFX-3.3 LDO IC
+- 1x MIC5319-3.3YD5-TR LDO IC
 - 1x Si1308EDL MOSFET
 - 1x DS3231MZ real-time clock
 - 1x LED (0603 orange LED)

@@ -14306,7 +14306,7 @@
 				)
 			)
 		)
-		(property "Value" "LP5907MFX-3.3"
+		(property "Value" "MIC5319-3.3YD5-TR"
 			(at 203.2 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
