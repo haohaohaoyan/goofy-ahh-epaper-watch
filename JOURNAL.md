@@ -100,3 +100,14 @@ Lapse: https://lapse.hackclub.com/timelapse/4CGUG4vbtZhq
 ![Current logo](Journal/06-01-26.png)
 
 **Total time spent: 1 hour**
+
+# 6/2: A lot of work on the back art and getting rid of the RTC IC
+
+That was a pretty big one. As it turns out, I never needed the RTC IC and should've done more research beforehand, because the ESP32 I'm using already has one built in. It's not as accurate, but periodically syncing it with NTP every 12 hours will make it virtually nothing. Thus, I tossed it (and its three resistor and one capacitor lackeys) right out the window and erased it to make space for some art or something. I don't know yet. I'm asking the group chat about that. Also, more work on the silkscreen art because I want my things to look good. I finished up the logo and made most of the art on the backside, which involved going into Blender (which I am actually OK at) and messing around with outline shaders (which I am NOT OK at). It's not too complex right now but I'm looking to add details. At the moment, it's my name, the Hack Club flag, some big splash art, and the logo on the back. Next will be finishing the art on the front. I needed something to occupy my time with anyway because I'm going to ask for (peer?) review at a local makerspace on Thursday, which is also where I'm hoping to find a hotplate for soldering the microcontroller (I only have a cheap soldeirng iron from Hackpad). I should be finishing up with the silkscreens tomorrow. I have images of the front & back sides of the watch, but Kicad's 3D viewer doesn't agree with my edge cuts right now so it's just a rectangle instead of the actual shape.
+
+Lapse: https://lapse.hackclub.com/timelapse/_bV2QoX63d5C
+
+![PCB 3D model front](Journal/06-02-26(1).png)
+![PCB 3D model back](Journal/06-02-26(2).png)
+
+**Total time spent: 1.5 hours**
