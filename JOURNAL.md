@@ -111,3 +111,11 @@ Lapse: https://lapse.hackclub.com/timelapse/_bV2QoX63d5C
 ![PCB 3D model back](Journal/06-02-26(2).png)
 
 **Total time spent: 1.5 hours**
+
+# 6/3: Some extra details and moving a diode
+
+I had a bunch of summer work to do today and other activities. Just in case, I looked for things to add to the front spaces and changed the "O" in both instances of the main logo to be copper instead of silkscreen, because that looks better. I also rerouted a section of the e-paper driver to not break a silkscreen line and stay completely under the display. It looks better that way and doesn't sit on top of the outline for the screen anymore. Also removed the RTC IC from the BOM and gave it a little memorial. I'll get it reviewed tomorrow at the makerspace and hopefully also send it for Forge review. No lapse today because it was late. 
+
+![Picture that has the edits I made today and not really anything else](Journal/06-03-26.png)
+
+**Total time spent: 0.5 hours**

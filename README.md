@@ -23,7 +23,6 @@ Current features:
 - 1x MCP73831-OT battery charging IC
 - 1x MIC5319-3.3YD5-TR LDO IC
 - 1x Si1308EDL MOSFET
-- 1x DS3231MZ real-time clock
 - 1x LED (0603 orange LED)
 - 1x JST-PH connector
 - 3x 4.7 uF capacitor (needs to be checked) (all caps are 0805)
