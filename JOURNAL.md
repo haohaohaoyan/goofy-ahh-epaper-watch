@@ -119,3 +119,13 @@ I had a bunch of summer work to do today and other activities. Just in case, I l
 ![Picture that has the edits I made today and not really anything else](Journal/06-03-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 6/4: Fancy spaceship for back art
+
+Yeah. I spent an entire one and a half hours modeling a fancy sci-fi spaceship for the back art because it wasn't interesting enough. I actually spent a lot of time deciding the details while yapping with my friends so that's why it took so long for it. How do I talk about it in a hardware-focused devlog?? I pretty much just made a bunch of edge loops, extruded an entire ring for the big fancy ring, extruded 4 more faces for the 4 smaller engines and making a bunch of insets for the final 5 engines. Also, I actually went to the makerspace and yapped with some guys about it (I'm can't join before I'm 18 because of their insurance things but if I get my dad to sign up for membership I get to tag along) and I learned a few things. The electronics guy there looked over my schematic and PCB and gave it the green light, so that's good. He also gave a bunch of tips on how to solder it, especially the ESP32 because I have to use a hotplate for that. Essentially what he's been doing is putting some aluminum foil in a tray in a toaster oven and then using that to reflow it. I can even do it with an old skillet I can steal from my mom! Looks like it won't be too bad. I didn't get to steal any solder wick though. Also, some guy there was making his own tri-axis 3D printer and that was super cool. Once I figure out some art for the front side I'll go send it to JLCPCB.
+
+Lapse: https://lapse.hackclub.com/timelapse/hZlMMsgQKpJy
+
+![Woaw spaceshippy](Journal/06-04-26.png)
+
+**Total time spent: 1.3 hours**
