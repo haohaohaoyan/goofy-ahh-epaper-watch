@@ -9684,7 +9684,7 @@
 		(dnp no)
 		(uuid "6a753cbd-bffc-40aa-a36a-b0c1dc4c562b")
 		(property "Reference" "R6"
-			(at 184.15 35.306 90)
+			(at 184.15 30.988 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9694,7 +9694,7 @@
 			)
 		)
 		(property "Value" "3R"
-			(at 184.15 30.734 90)
+			(at 184.15 35.306 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

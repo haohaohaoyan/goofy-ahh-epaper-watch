@@ -129,3 +129,13 @@ Lapse: https://lapse.hackclub.com/timelapse/hZlMMsgQKpJy
 ![Woaw spaceshippy](Journal/06-04-26.png)
 
 **Total time spent: 1.3 hours**
+
+# 6/5: Getting it ready for review 
+
+I forgot about sending it in for review before getting parts. I finished up the art on both sides and the board itself is ready. I moved the nickname to the backside, my name and credits onto the front, a soldering iron icon in the empty space left behind by the eviscerated RTC IC, and a giant Forge logo emoji underneath the e-paper screen. I was also a bit scared that I reversed the connections on the JST-PH connector for the battery, but another look showed that it was correct. I also ran DRC one last time to check for anything that would actually be an issue and it was fine asides a few thermal relief issues that I wired up anyway because I wanted to make sure that they were working right. I also updated the BOM to match my components again and put the component footprint IDs next to the parts list. The hardware section should now be done. I also thought about the firmware a bit, but personally I think that's a matter to settle for when I have hardware to test it on. I also had a problem because I did a bunch of stuff AFTER finishing the lapse, but it's fine. Also, I checked the requirements for a project for reviewing and realized that I should probably make a case and finish up the BOM properly with links. I'll do that tomorrow.
+
+Lapse: https://lapse.hackclub.com/timelapse/REZUwnf0SyYz
+
+![Final front design](Journal/06-05-26.png)
+
+**Total time spent: 1 hour**
