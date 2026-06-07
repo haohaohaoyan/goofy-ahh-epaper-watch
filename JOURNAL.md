@@ -139,3 +139,13 @@ Lapse: https://lapse.hackclub.com/timelapse/REZUwnf0SyYz
 ![Final front design](Journal/06-05-26.png)
 
 **Total time spent: 1 hour**
+
+# 6/6: More of that getting-ready-for-review stuff and some key edits
+
+I redid the BOM on the README and gave it links for easy access to specific parts (and to fulfill those requirements for submission). While going over every single part and finding links for them, I found that 500 ohm resistors were REALLY expensive in the 0201 format and also realized that 0201 was probably a bit too small. I do know that I can handle 0805 size parts but 0201 is literally smaller than a common ant torso and I think that's a bit much. I switched all of the resistors to 0402 instead and it's looking better now (but still tiny). That required a bit of PCB updating but it was mostly cleaning up wires and moving around parts to accomodate the slightly larger (DOUBLED IN SIZE) resistors. After that, I replaced all of the resistor links, found an 0402 500 ohm resistor that DIDN'T cost 95 cents, and finished up the BOM. I'll probably have to convert it to .csv format later but I'll worry about that sometime. I don't really know about the last couple of necessary parts (case, conformal coating for splash protection, watch band), but I'll figure them out or just make them out of scrap. I don't know how I'll document that. I also made production files (which I had to update again) to see my options for milling, and I learned that ENIG plating was how the folks who made the Orpheus Pico got the copper to look shiny (and also how most PCB designers made the pads gold for good connection). I'm considering it but it's MUCH more expensive at a $16 upcharge so I might still have it as HASL. I should have it completely ready to submit by Friday at least, as long as they're okay with me not having the firmware yet (because I'm waiting for hardware to debug it on). 
+
+Lapse: https://lapse.hackclub.com/timelapse/KrMlffq5Bx3q
+
+![Enormous BOM table](Journal/06-06-26.png)
+
+**Total time spent: 1.9 hours**
