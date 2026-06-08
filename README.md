@@ -1,13 +1,16 @@
 # Neutron e-paper watch
 
-I really wanted to make myself a wristwatch that I could use and carry around in everyday life. I wanted something cheaper than that cool-looking CircuitMess watch that also provided more functionality for hardware (so I skipped over the PineTime). 
+![cool looking thumbnail thing](Journal/06-07-26.png)
+
+A developer/tech nerd friendly wristwatch powered by an ESP32 S3 MINI 1, uses an e-paper display for power efficiency, and a 2000mAh battery for all-day use. It's supposed to provide both the features that a regular watch is supposed to have, while also having smartwatch functions and IO pins to leverage the power of the ESP32 microcontroller. I really wanted to make myself a wristwatch that I could use and carry around in everyday life. I was initially inspired by that really expensive and prebuilt CircuitMess watch, but it lacked the DIY process and developer tools that I wanted (so no PineTime from Flavortown either). I also was bored and wanted to make another hardware project after Hackpad, and I started noticing how much I needed a watch because I got used to borrowing my mom's and forgetting the time afterward. Plus, it just looks cool. The e-paper screen was added for the power advantage over OLED, not drawing power asides from time changes. It made the driver bit more complex (because I didn't want to occupy more space with a drop-in driver module), but might have some orientation issues. The battery was initially going to be 500mAh, but that was much too little and I chose a much larger battery to carry a charge that should last all day at the cost of more space. I think that this will be a rewarding project and a well-functioning timepiece, but that will be settled after I order. 
 
 Current features: 
 - 1.54 inch e-paper display
-- 2000 mAh Li-po battery which will give around 15-20 hours of battery life (hopefully)
+- 2000 mAh Li-po battery which will give around 15-20 hours of battery life (hopefully), orange LED charging indicator
 - USB-C charging and data transfer
 - ESP32 S3 MINI 1 powered, so it has internect connectivity
-- 8-pin IO row, with 1 ground, 1 3.3v, and 6 IO pins.
+- Automatically syncs time with NTP every 12 hours (planned in firmware)
+- 8-pin female IO pin row, with 1 ground, 1 3.3v, and 6 IO pins.
 - 2 IO buttons, labeled A and B in the style of the Game Boy
 - Reset and boot buttons for programming
 - Hopefully won't explode (IMPORTANT)
@@ -15,6 +18,10 @@ Current features:
 Firmware TBD. I'm waiting until I have the hardware to actually test it on. 
 
 Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering
+
+## Schematic
+
+![schematic image ooh cool](PCB/schematic_image.png)
 
 ## BOM:
 
@@ -45,12 +52,12 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 
 Non-electronics:
 - 3D-printed case (TODO)
-- Some kind of stretchy watch band (idk)
+- One-piece 16mm fabric watch strap (Amazon - https://www.amazon.com/WOCCI-Military-One-piece-Ballistic-Buckle/dp/B0CTT8C1JG?th=1)
 - (Optional but probably needed) PCB coating for waterproofing
 
 ## Credits:
 
 yassin for looking over my battery circuit and pointing out that I tried to shove 5v into 3v3 (I know I'm an idiot)
 Kai Pereira for responding to my questions on the hardware slack and for his Overglade badge which I used as a bit of a reference to make sure I'm not doing anything stupid with the e-paper
-Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that, do NOT give me any credit for that)
+Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that, do NOT give me any credit for that) (I cannot stress enough that all credit should go to them because I literally do not know anything about e-paper displays. Heck, the entire project is literally like 3 example schematics that are wired together in a way that looks like it works. I hope I know what I'm doing and I will binge a BUNCH of high-school-level electronics courses afterward.)
 The OCGC Google Chat (a bunch of my friends) for name help
