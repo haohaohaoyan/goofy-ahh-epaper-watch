@@ -157,3 +157,11 @@ I was a bit concerned about the pinout of the new LDO IC in case it didn't match
 ![Wowee schematic image](PCB/schematic_image.png)
 
 **Total time spent: 0.6 hours**
+
+# 6/8: Just some looking around at manufacturing & submission requirements
+
+I was occupied with work for the entire day and could only squeeze out some time at the end of the day (anything for the broken streak). I pretty much just tried PCBWay because I hoped their ENIG prices were better (they were NOT). PCBWay also had worse prices in general for fab and they had an upcharge for taking their product number off?????? I'm definitely going with JLCPCB. Also, I settled on definitely having ENIG plating because asides from the aesthetic purpose, I heard the bumps on HASL could really make soldering small SMD parts (like the 0402 resistors I'm using) and loads of tiny pins (like on the 24 pin connector) a nightmare and that the main purpose of using ENIG was to have a flatter surface. I'm also looking at stencil prices, but the biggest problem is that they apparently weigh an entire kilogram. Then I found out that the default option was 38x28cm, which is larger than a Macbook, for reference. I scaled it down to somewhat larger than my PCB (60x80mm), and prices are looking much better. No lapse today because I spent like 10 minutes. I've been thinking to myself a bit. Maybe I'm doing this in the wrong order??? I should probably finish up the firmware and case but I'm not doing the firmware until I get hardware and the case is still in progress until I have time for it. I just did this to keep my streak.
+
+![Looks like the final pricing for the pcb on JLC](Journal/06-08-26.png)
+
+**Total time spent: 0.2 hours**
