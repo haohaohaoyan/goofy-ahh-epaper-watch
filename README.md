@@ -1,7 +1,5 @@
 # Neutron e-paper watch
 
-![cool looking thumbnail thing](Journal/06-07-26.png)
-
 A developer/tech nerd friendly wristwatch powered by an ESP32 S3 MINI 1, uses an e-paper display for power efficiency, and a 2000mAh battery for all-day use. It's supposed to provide both the features that a regular watch is supposed to have, while also having smartwatch functions and IO pins to leverage the power of the ESP32 microcontroller. I really wanted to make myself a wristwatch that I could use and carry around in everyday life. I was initially inspired by that really expensive and prebuilt CircuitMess watch, but it lacked the DIY process and developer tools that I wanted (so no PineTime from Flavortown either). I also was bored and wanted to make another hardware project after Hackpad, and I started noticing how much I needed a watch because I got used to borrowing my mom's and forgetting the time afterward. Plus, it just looks cool. The e-paper screen was added for the power advantage over OLED, not drawing power asides from time changes. It made the driver bit more complex (because I didn't want to occupy more space with a drop-in driver module), but might have some orientation issues. The battery was initially going to be 500mAh, but that was much too little and I chose a much larger battery to carry a charge that should last all day at the cost of more space. I think that this will be a rewarding project and a well-functioning timepiece, but that will be settled after I order. 
 
 Current features: 
@@ -17,11 +15,14 @@ Current features:
 
 Firmware TBD. I'm waiting until I have the hardware to actually test it on. 
 
-Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering
-
+Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, apply Kapton tape to the side of the battery that will lie in contact with the board, apply Kapton tape to backside of e-paper screen, use DOUBLE SIDED FOAM TAPE???
 ## Schematic
 
 ![schematic image ooh cool](PCB/schematic_image.png)
+
+## PCB
+Note: the PCB is 75x42mm
+![pcb image ooh cool](PCB/PCB_image.png)
 
 ## BOM:
 
@@ -39,8 +40,9 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |Si1308EDL power MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock, BE3 is less green but is otherwise identical]|
 |0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|
 |JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626| 
-|4.7 uF 0805 SMD capacitor|3|C1, C2, C12| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|
-|1 uF 0805 SMD capacitor|13|C3-11, C13-16| Generic component, (Digikey) https://www.digikey.com/en/products/detail/nextgen-components/0805B105K100CC/18677039|
+|4.7 uF 0805 SMD capacitor|4|C1, C2, C12, C16| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|
+|1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/nextgen-components/0805B105K100CC/18677039|
+|0.1 uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|
 |2k ohm 0402 SMD resistor|1|R3| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0402FR-072KL/2827565|
 |4.7k ohm 0402 SMD resistor|2|R1, R2| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0402JR-074K7L/726477|
 |3 ohm 0402 resistor|1|R6| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0402FR-073RL/5917684|
@@ -54,6 +56,7 @@ Non-electronics:
 - 3D-printed case (TODO)
 - One-piece 16mm fabric watch strap (Amazon - https://www.amazon.com/WOCCI-Military-One-piece-Ballistic-Buckle/dp/B0CTT8C1JG?th=1)
 - (Optional but probably needed) PCB coating for waterproofing
+- Kapton tape
 
 ## Credits:
 

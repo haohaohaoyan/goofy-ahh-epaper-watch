@@ -165,3 +165,11 @@ I was occupied with work for the entire day and could only squeeze out some time
 ![Looks like the final pricing for the pcb on JLC](Journal/06-08-26.png)
 
 **Total time spent: 0.2 hours**
+
+# 6/9: Adding an extra capacitor for the LDO and changing a silkscreen
+
+More PE work so I couldn't get to make progress much. I was planning on starting the case but I was interrupted by more homework so I only got to updating my copy of FreeCAD. Instead, I edited the schematic to change C16 to 4.7uF and added C17 as a .1uF capacitor to reduce noise in the LDO (per the datasheet). The schematic image and BOM are updated to match, and the PCB is added too. I also edited the soldering iron image to take more space and also have a copper bit (preppier). I actually did ask about the firmware requirement and now I have to make a dummy firmware before submission. I think I'm going to try learning C++ to make it more effective but if all else fails, I can fall back onto CircuitPython. I was going to have a lapse today but considering how short the time got cut, I'm just going to skip it. 
+
+![New bits on the PCB](Journal/06-09-26.png)
+
+**Total time spent: 0.2 hours**
