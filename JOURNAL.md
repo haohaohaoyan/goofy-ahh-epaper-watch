@@ -173,3 +173,11 @@ More PE work so I couldn't get to make progress much. I was planning on starting
 ![New bits on the PCB](Journal/06-09-26.png)
 
 **Total time spent: 0.2 hours**
+
+# 6/10: Replacing the LDO for a cheaper option 
+
+I was quite shocked when I realized that the LDO was an entire $1.70!!! That's too much. I swapped it for an RT9080 that did the same thing but was cheaper and updated both the schematic and PCB to match. Again, I had a RIDICULOUS assignment today and was planning on getting to the case but couldn't. I'm thinking about skipping the case and directly adding slots for the watchband into my PCB and using double-sided-tape or something to get the battery strapped onto it. Then again, the issue of being splash-proof comes up. That's gonna be hard. I will only update the BOM because I might change the PCB again. No lapse today because that STUPID ASSIGNMENT CAME UP. Forgive me for being angry but they give us 1 day for an assignment that turned out to be 6 pages at 12 pt. font. This is a summer PE course, by the way. 
+
+![This should be the final LDO.](Journal/06-09-26.png)
+
+**Total time spent: 0.1 hours**

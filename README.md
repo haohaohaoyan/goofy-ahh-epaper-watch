@@ -36,7 +36,7 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|
 |SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|
 |MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|
-|MIC5319-3.3YD5-TR LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MIC5319-3-3YD5-TR/1031162|
+|RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|
 |Si1308EDL power MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock, BE3 is less green but is otherwise identical]|
 |0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|
 |JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626| 
@@ -56,7 +56,7 @@ Non-electronics:
 - 3D-printed case (TODO)
 - One-piece 16mm fabric watch strap (Amazon - https://www.amazon.com/WOCCI-Military-One-piece-Ballistic-Buckle/dp/B0CTT8C1JG?th=1)
 - (Optional but probably needed) PCB coating for waterproofing
-- Kapton tape
+- Kapton tape for electronic insulation and protecting some components
 
 ## Credits:
 

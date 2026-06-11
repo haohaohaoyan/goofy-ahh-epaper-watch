@@ -4504,7 +4504,7 @@
 					)
 				)
 			)
-			(property "Value" "MIC5319-3.3YD5-TR"
+			(property "Value" "RT9080-33GJ5"
 				(at 0 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4677,7 +4677,7 @@
 				(pin input line
 					(at 7.62 0 180)
 					(length 2.54)
-					(name "BYP"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5615,12 +5615,6 @@
 		(uuid "223687fb-f2b8-4928-b537-0a5b4364adf4")
 	)
 	(junction
-		(at 198.12 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2317754e-ece0-486e-be6f-8a073191471d")
-	)
-	(junction
 		(at 190.5 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5633,7 +5627,7 @@
 		(uuid "29f321e8-d8df-4bbb-8400-468637a5a927")
 	)
 	(junction
-		(at 187.96 109.22)
+		(at 196.85 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d3041ee-6143-43f5-9bd2-7e796002af0b")
@@ -5765,6 +5759,12 @@
 		(uuid "bef4b2e5-121c-4de7-8972-3d03c3784a7f")
 	)
 	(junction
+		(at 203.2 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bff70b06-f4c1-4477-bafc-89c32896675f")
+	)
+	(junction
 		(at 189.23 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5820,16 +5820,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 99.06) (xy 198.12 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00ad74d2-e491-47c0-9de6-00c3ebc59b87")
-	)
-	(wire
-		(pts
 			(xy 228.6 38.1) (xy 232.41 38.1)
 		)
 		(stroke
@@ -5880,7 +5870,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 109.22) (xy 203.2 109.22)
+			(xy 196.85 109.22) (xy 203.2 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6150,7 +6140,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 109.22) (xy 187.96 109.22)
+			(xy 193.04 109.22) (xy 196.85 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6310,6 +6300,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 99.06) (xy 210.82 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "459c6712-c0b5-40bf-983e-fb3fc4bc5e86")
+	)
+	(wire
+		(pts
 			(xy 170.18 41.91) (xy 180.34 41.91)
 		)
 		(stroke
@@ -6360,7 +6360,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 106.68) (xy 187.96 109.22)
+			(xy 196.85 106.68) (xy 196.85 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6397,16 +6397,6 @@
 			(type default)
 		)
 		(uuid "54befa4f-bb0e-4552-999e-b434cbbf563f")
-	)
-	(wire
-		(pts
-			(xy 198.12 106.68) (xy 203.2 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56730d34-81a4-486a-8ead-4c78bdcd19c0")
 	)
 	(wire
 		(pts
@@ -6680,16 +6670,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 99.06) (xy 198.12 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f3a25a4-ff8d-42f5-934b-4d43999400e3")
-	)
-	(wire
-		(pts
 			(xy 113.03 97.79) (xy 115.57 97.79)
 		)
 		(stroke
@@ -6767,6 +6747,16 @@
 			(type default)
 		)
 		(uuid "8b73a2ee-3e1b-4408-983e-2fdd9cfa03fc")
+	)
+	(wire
+		(pts
+			(xy 203.2 99.06) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be04c36-61fa-40f2-8fc7-dc1b3161ac90")
 	)
 	(wire
 		(pts
@@ -7090,7 +7080,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 101.6) (xy 187.96 99.06)
+			(xy 196.85 101.6) (xy 196.85 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7290,7 +7280,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 99.06) (xy 210.82 99.06)
+			(xy 196.85 99.06) (xy 203.2 99.06)
 		)
 		(stroke
 			(width 0)
@@ -10986,7 +10976,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 187.96 104.14 0)
+		(at 196.85 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10996,7 +10986,7 @@
 		(dnp no)
 		(uuid "a6b2897c-3fed-407e-affa-5cd83913eaa1")
 		(property "Reference" "C16"
-			(at 185.166 102.362 0)
+			(at 194.056 102.362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11006,7 +10996,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 190.754 102.362 0)
+			(at 199.644 102.362 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11016,7 +11006,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 187.96 104.14 0)
+			(at 196.85 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11027,7 +11017,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 104.14 0)
+			(at 196.85 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11038,7 +11028,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 187.96 104.14 0)
+			(at 196.85 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11988,7 +11978,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 184.15 109.22 0)
+		(at 193.04 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11998,7 +11988,7 @@
 		(dnp no)
 		(uuid "c72af896-75f8-4cb0-aa03-64d0e7fdd1c8")
 		(property "Reference" "#PWR020"
-			(at 184.15 113.03 0)
+			(at 193.04 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12009,7 +11999,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 179.578 108.204 0)
+			(at 188.468 108.204 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12019,7 +12009,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 109.22 0)
+			(at 193.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12030,7 +12020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 109.22 0)
+			(at 193.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12041,7 +12031,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 184.15 109.22 0)
+			(at 193.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12534,85 +12524,6 @@
 			(project "watch"
 				(path "/42bc35b9-589d-4411-845d-afdd709fd2cc"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 198.12 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da2a710d-4c93-4647-a04b-407ef938df75")
-		(property "Reference" "C17"
-			(at 195.834 102.616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 201.676 102.616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 198.12 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 198.12 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eb800fdd-36d1-4c54-a0e3-bb3b0e9d3267")
-		)
-		(pin "1"
-			(uuid "f76721d0-2077-4f97-9de4-2e45839dca7f")
-		)
-		(instances
-			(project "watch"
-				(path "/42bc35b9-589d-4411-845d-afdd709fd2cc"
-					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -13212,7 +13123,7 @@
 				)
 			)
 		)
-		(property "Value" "MIC5319-3.3YD5-TR"
+		(property "Value" "RT9080-33GJ5"
 			(at 210.82 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
