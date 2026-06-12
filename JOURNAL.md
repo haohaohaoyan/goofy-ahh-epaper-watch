@@ -181,3 +181,11 @@ I was quite shocked when I realized that the LDO was an entire $1.70!!! That's t
 ![This should be the final LDO.](Journal/06-09-26.png)
 
 **Total time spent: 0.1 hours**
+
+# 6/11: Modeling the case (pretty much)
+
+Praise Isaac Newton's toenails, I finally got time off because I only had 2 assignments today. I actually got to making the case for the thing. I was initially planning on either no case or having a shell cover the entire thing, but I still wanted it to be easily removable because I put all of the silkscreen art there for a reason and I can't get injection molding for a good clear case. I initially thought of having two loops on the PCB itself and having the band go through them and between the PCB and the e-paper display, but I was afraid of damage to the components underneath and scrapped it. Plus, it's pretty hard to replace parts of a PCB that snap off. I first recreated the critical components of the PCB and components in FreeCAD, which are the battery, PCB, 8-pin connector, and e-paper screen. I had lunch after finishing that, and came up with having the watch strap go between the PCB and the battery, where there are no small components. However, I later forgot about that and instead solved the earlier PCB problem (ish) by having it friction fit into the case. This still leaves the electronics vulnerable to shorting by water, so I'll have to come up with a solution to that. I attached watch straps on the sides of the battery casing instead, because I forgot I was using a 1-piece watch strap and will have to accommodate that tomorrow. It's looking okay so far but I just have to fix that problem. I also updated the BOM images and uploaded the case files. Along the way, I also fixed a bug with the KiCad edge segments not working properly because I had a tiny segment underneath a big one and that was throwing it off. 
+
+![The case in FreeCAD](Journal/06-11-26.png)
+
+**Total time spent: 2.1 hours**
