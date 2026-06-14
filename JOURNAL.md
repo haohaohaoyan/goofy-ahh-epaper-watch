@@ -199,3 +199,13 @@ Lapse: https://lapse.hackclub.com/timelapse/5ZasyhiRauKG
 ![The current PCB](Journal/06-12-26.png)
 
 **Total time spent: 2 hours**
+
+# 6/13: Starting the firmware and deciding to be finished with the PCB.
+
+Remember that edit I planned yesterday? I was foiled by the battery size again. I tried looking up battery alternatives but they had either too little capacity or were the exact same size. I gave up on resizing the board and decided to keep it as-is. I did start on the firmware but I didn't get much done on it asides from just setting up the e-paper display. I'm going to make the dummy one in CircuitPython and remake it in C++ when I get a chance. Nothing actually changed for the PCB (asides from changing the fill zone and spacing out some caps), so I'll just toss in an image of what the firmware looks like now. Hopefully that's ok. I tried adding the new firmware time tracker to the existing epaper watch project but it isn't letting me. As far as I know, it's tracked exactly 10 minutes, which is pretty miserable but not too bad considering I just defined 2 variables. 
+
+Lapse (very short and does not include programming): https://lapse.hackclub.com/timelapse/n0NHtMpKjYvQ
+
+![Should be final PCB image.](Journal/06-14-26.png)
+
+**Total time spent: 0.6 hours**
