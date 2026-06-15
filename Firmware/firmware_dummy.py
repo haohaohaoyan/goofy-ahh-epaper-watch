@@ -1,4 +1,6 @@
-import time, epaperdisplay, displayio, board, digitalio, fourwire, busio, asyncio
+import time, asyncio
+import board, fourwire, busio, digitalio
+import epaperdisplay, displayio, vectorio
 
 # initialize epaper display
 epaper_bus = fourwire.FourWire(
@@ -17,5 +19,21 @@ epaper_display = epaperdisplay.EPaperDisplay(
     busy_pin = board.IO10
     )
 
-def keep_time():
-    pass
+# timekeeping
+current_epoch_time = time.time()
+
+# Displayio roots for watch
+
+display_terminal = displayio.CIRCUITPYTHON_TERMINAL
+
+async def keep_time():
+    # This is pretty much a test! Super crappy
+    asyncio.sleep(60)
+    current_epoch_time += 60
+    keep_time()
+
+async def update_display():
+    pass #idk
+    # epaper_display.root_group = idja;mck
+
+keep_time()

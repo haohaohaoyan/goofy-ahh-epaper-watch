@@ -206,6 +206,14 @@ Remember that edit I planned yesterday? I was foiled by the battery size again. 
 
 Lapse (very short and does not include programming): https://lapse.hackclub.com/timelapse/n0NHtMpKjYvQ
 
-![Should be final PCB image.](Journal/06-14-26.png)
+![Should be final PCB image.](Journal/06-13-26.png)
 
 **Total time spent: 0.6 hours**
+
+# 6/14: A bit more work on the firmware, some time testing
+
+I tried to spend a bit more time on the firmware today. I wanted to figure out a way to (mostly) accurately track time for at least 6 hours (I'm going to sync with NTP at around that interval). I actually tried making a small program (which is also in the firmware folder) to test it with that would output what it thought the current second was but over the 40 minutes that I have tested it so far, it is about 2 seconds behind. I'm assuming that this is because it takes a small amount of time to convert the epoch time into a human-readable format, so I'm going to try using async on the next test. I'm already planning on using async for most functions in the actual script, and keeping timekeeping and display updating separate. This way, the timer hopefully will have much less lag even if it takes longer to parse the screen update. I also started reading the documentation on how displayio works, because that's the module I have to use for the e-paper display, and it looks quite powerful. No lapse because I'm tracking with Hackatime. Also, how do I even have pictures for programming? I'm just going to include a pic of the current (lagging) time test. I'll do a test with asyncio tomorrow and hopefully that'll go better. (p.s. i found that i named yesterday's files wrong. changed.)
+
+![not working well!](Journal/06-14-26.png)
+
+**Total time spent: 0.5 hours**
