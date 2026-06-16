@@ -217,3 +217,13 @@ I tried to spend a bit more time on the firmware today. I wanted to figure out a
 ![not working well!](Journal/06-14-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 6/15: Changing the height of the PCB by exactly 2 millimeters and cleaning up the mess that created
+
+When I was looking at the PCB again, I thought that the length should be changed to make the USB-C port stick out a little more to plug in more easily with the case installed. Instead of moving it outward, I instead just pushed the bottom edge of the PCB inward 2 millimeters because I was still looking to make it smaller. For today, that's exactly what I did. Pushing the edge cuts in and re-centering the e-paper display wasn't too big of a problem asides from a few power lines getting too close for comfort and moving them apart for safety. However, changing the case model was a pain in the arse because half everything depended on a previous step and changing the size of the PCB cutout and frame triggered a domino reaction that broke almost every single element. I had to redo most of it from scratch (one of the pads was super stubborn about a missing dependency) but the case should now fit properly. After doing that and resizing the back art, I lazily tacked my icon above the display area because why not. I also tried testing that asyncio version of the timer algorithm and it's drifted like 4 seconds after an hour or so of testing. I'll try using something like time.perf_counter() to track the actual amount of time that is missed and somehow bypass that by comparing to another clock or something. If I have time, I'll get that firmware finished as soon as possible. I was going to start work on the displayio things but the 2 millimeter thing took priority for some reason. Hopefully it'll be done by the end of this week. 
+
+Lapse: https://lapse.hackclub.com/timelapse/WHN9oUn-f7pt
+
+![DEFINITELY the final PCB. Trust me. Definitely.](Journal/06-15-26.png)
+
+**Total time spent: 2 hours**

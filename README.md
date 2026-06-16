@@ -21,8 +21,9 @@ Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, app
 ![schematic image ooh cool](PCB/schematic_image.png)
 
 ## PCB
-Note: the PCB is 75x42mm
-### No PCB image for now, will upload when edits are finished
+Note: the PCB is 75x40mm
+
+![pcb image ooh cool](PCB/PCB_image.png)
 
 ## BOM:
 
