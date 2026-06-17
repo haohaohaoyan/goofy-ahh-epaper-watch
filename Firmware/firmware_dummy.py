@@ -26,6 +26,8 @@ current_epoch_time = time.time()
 
 display_terminal = displayio.CIRCUITPYTHON_TERMINAL
 
+display_watch_base = 0 # placeholder
+
 async def keep_time():
     # This is pretty much a test! Super crappy
     asyncio.sleep(60)
