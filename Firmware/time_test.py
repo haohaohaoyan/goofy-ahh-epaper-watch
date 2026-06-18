@@ -11,23 +11,19 @@ async def display_time():
 
 # Circuitpy doesn't have perf counter
 
-start_time = time.monotonic()
-prev = start_time
+ideal = time.monotonic()
 offset = 0
-post = time.monotonic()
 
-for i in range(5):
+while True:
+    prev = time.monotonic()
     # Run the periodic process
     asyncio.run(display_time())
-    # debug
-    print(time.monotonic() - prev)
-    # Sleep time adjusted to account for missing time 
-    time.sleep(1 - (time.monotonic() - (post - 1)))
-    # past_runtime = time.monotonic() - prev
-    # offset = past_runtime - 1
-    post = prev 
-    prev = time.monotonic()
-
-end_time = time.monotonic()
-print(end_time - start_time)
-print(f'Total: {(end_time - start_time) * 72}')
+    # Sleep time with offset subtracted
+    time.sleep(60 - (offset))
+    # Ideal time assumes that *exactly* one second or minute has passed
+    ideal += 60
+    # Offset will be the difference between what the time is and what it should be. If the clock is dragging, the offset will be positive and subtracted, and if rushing it will be negative and added. 
+    offset = time.monotonic() - ideal
+    post = time.monotonic()
+    # Print total elapsed time for debug
+    print(prev - post)

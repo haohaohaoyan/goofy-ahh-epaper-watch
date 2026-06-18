@@ -235,3 +235,33 @@ Obviously I didn't expect the timer to be perfect, but not by this much. My test
 ![pretty bad test](Journal/06-16-26.png)
 
 **Total time spent: 1 hour**
+
+# 6/17: Doing that new time loop I was talking about yesterday
+
+Well I actually got to making that new timer loop. This time, it only has to call time.monotonic() once per minute and works as a while loop. I know that a while loop can have more problems but asyncio HATES ME. The current program is exactly as I explained in the previous post but here's the commented code: 
+```
+ideal = time.monotonic()
+offset = 0
+
+while True:
+    prev = time.monotonic()
+    # Run the periodic process
+    asyncio.run(display_time())
+    # Sleep time with offset subtracted
+    time.sleep(60 - (offset))
+    # Ideal time assumes that *exactly* one second or minute has passed
+    ideal += 60
+    # Offset will be the difference between what the time is and what it should be. If the clock is dragging, the offset will be positive and subtracted, and if rushing it will be negative and added. 
+    offset = time.monotonic() - ideal
+    post = time.monotonic()
+    # Print total elapsed time for debug
+    print(prev - post)
+```
+
+On the latest test, the timer only drifted .0019 seconds after 5 minutes, which when multiplied to estimate the final 6 hour time, is only a drift of 0.14 seconds! 
+
+![wow nice test we got](Journal/06-17-26.png)
+
+This is a small improvement over the previous best test and a massive improvement over the other ones! On the while loop, I have set it to print the amount of time that has passed between each test and I can see the times shortening or lengthening to compensate for inaccuracies. So far, it's been working really well and I think I can implement it into the main script when I get a chance. Also, I realized that 0402 resistors are STILL too small to deal with by hand. I'll swap them to 0603s and reroute tomorrow. Tracked on Hackatime again.
+
+**Total time spent: 0.6 hours**
