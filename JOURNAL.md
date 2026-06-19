@@ -152,9 +152,9 @@ Lapse: https://lapse.hackclub.com/timelapse/KrMlffq5Bx3q
 
 # 6/6+1: Some more work getting the thing ready for review
 
-I was a bit concerned about the pinout of the new LDO IC in case it didn't match the earlier one (they were the same footprint and the essential pins looked the same at first glance) and the pin that didn't need connection earlier actually had a connection. However, it was optional for lower noise and I decided to skip it because I didn't want to bother with editing the schematic symbol. I also bumped my question about the firmware requirement in the forge channel on the slack. I spent some time looking for a fabric watch strap that could loop around two bars on the watch case and actually make it a watch, but most options were quite expensive because they pushed the luxury ones. I was also limited to one-piece straps, because I don't think printed PLA will hold onto the bars used for two-piece straps well. I did find a cheap one-piece strap on Amazon that I have linked in the README, and I'll try building around that for the case. I also wrote some things for the README and added a picture of the schematic to fulfill another requirement. No lapse today because I expected it to be short. The picture attatched is the full transparent schematic that's in the README.
+I was a bit concerned about the pinout of the new LDO IC in case it didn't match the earlier one (they were the same footprint and the essential pins looked the same at first glance) and the pin that didn't need connection earlier actually had a connection. However, it was optional for lower noise and I decided to skip it because I didn't want to bother with editing the schematic symbol. I also bumped my question about the firmware requirement in the forge channel on the slack. I spent some time looking for a fabric watch strap that could loop around two bars on the watch case and actually make it a watch, but most options were quite expensive because they pushed the luxury ones. I was also limited to one-piece straps, because I don't think printed PLA will hold onto the bars used for two-piece straps well. I did find a cheap one-piece strap on Amazon that I have linked in the README, and I'll try building around that for the case. I also wrote some things for the README and added a picture of the schematic to fulfill another requirement. No lapse today because I expected it to be short. The picture attatched is the full transparent schematic that's in the README. *EDIT: The image originally linked directly to the README one, but that's been updated. Here's an unused picture of the PCB that day instead.
 
-![Wowee schematic image](PCB/schematic_image.png)
+![Wowee schematic image](Journal/06-07-26.png)
 
 **Total time spent: 0.6 hours**
 
@@ -265,3 +265,17 @@ On the latest test, the timer only drifted .0019 seconds after 5 minutes, which 
 This is a small improvement over the previous best test and a massive improvement over the other ones! On the while loop, I have set it to print the amount of time that has passed between each test and I can see the times shortening or lengthening to compensate for inaccuracies. So far, it's been working really well and I think I can implement it into the main script when I get a chance. Also, I realized that 0402 resistors are STILL too small to deal with by hand. I'll swap them to 0603s and reroute tomorrow. Tracked on Hackatime again.
 
 **Total time spent: 0.6 hours**
+
+# 6/18: Making footprints bigger, swapping parts, calculating things, and organizing the schematic
+
+I went back through the schematic to make the resistors all larger so that I could actually pick them up. Along the way, I also changed the resistor and capacitor footprints to their KiCAD hand-solderable variants, which had larger pads. That's definitely going to be useful. The changes caused by swapping the sizes of those weren't much asides from some nudging, but I decided to check the prices of everything again and the diodes were an entire 56 cents. That's $2.80 for 5 tiny diodes! I changed them to MBR0530T3G diodes, which are almost identical to the ones that were actually used on the Waveshare driver, the discontinued MBR0530. These diodes have a smaller SOD-123 footprint, which is much smaller than the CDBA340-HF's SMA footprint. I used this extra space to fit the larger resistor in the power circuit and give some space for everything so that I could actually work with it. I've also been thinking of organizing the schematic for a bit, and I finally figured out how to make those boxes. It's properly organized now and all sections are labelled. Taking another look at the PCB, since I have hidden the back art for the past few sessions because it got in the way, it's a bit off and doesn't line up with the battery outline anymore. That's something to do later. I really need to finish the firmware. I even planned on getting it done by tomorrow but I guess I need more time. After the back art, this should absolutely be the last revision. Also, the LCSC parts have minimum order quantities and I don't want a bunch of extra inductors and ribbon cable sockets lying around my room, so I'll have to fix that too. Also, the resistors on the back need a cutout in the case to accommodate.
+
+Lapse: https://lapse.hackclub.com/timelapse/RpYLWTzBu84B
+
+## Ignore the length. Lapse broke and recorded me lollygagging. I'll have that fixed ASAP. I know that I approximately spent 2:45 on it because that's what it said before I submitted.
+
+![FINAL PCB I SWEAR](Journal/06-18-26(1).png)
+![schematic is now nice and neat](Journal/06-18-26(2).png)
+
+
+**Total time spent: 2.5 hours**
