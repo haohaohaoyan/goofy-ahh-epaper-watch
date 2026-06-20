@@ -272,10 +272,18 @@ I went back through the schematic to make the resistors all larger so that I cou
 
 Lapse: https://lapse.hackclub.com/timelapse/RpYLWTzBu84B
 
-## Ignore the length. Lapse broke and recorded me lollygagging. I'll have that fixed ASAP. I know that I approximately spent 2:45 on it because that's what it said before I submitted.
+**Ignore the length. Lapse broke and recorded me lollygagging. I'll have that fixed ASAP. I know that I approximately spent 2:45 on it because that's what it said before I submitted.**
 
 ![FINAL PCB I SWEAR](Journal/06-18-26(1).png)
 ![schematic is now nice and neat](Journal/06-18-26(2).png)
 
 
 **Total time spent: 2.5 hours**
+
+# 6/19: Fixing the CC pins to make it not explode, fixing the art, updating the BOM, rewiring the transistor.
+
+More cleanup for yesterday's mess. Fixing the back art was just moving the battery outline to its correct position. The CC pin thing was actually an accident. I was going through the BOM again to fill in the correct resistor links, and mixed up the pull-up resistors on the ESP32 debug buttons with the pull-down resistors on the CC pins on the USB-C port. Apparently, I had them WAY too high and need to swap them out for 5.1K ohms instead of 10k. That's my mistake for not reading up on it. Also, I didn't pay enough attention when wiring up the transistor on the schematic, because I flipped pins 2 and 3 because the symbol on the Waveshare schematic didn't have numbers and was also mirrored. That's also my fault. Why can't I read?????? Anyway, it's fixed now, although it's kinda goofy. Fixed is better than the entire thing frying itself, I guess. This HAS to be the final PCB revision. I'm not sure if I really can afford the time to do any more. I'm still figuring out that MOQ thing for the LCSC parts but I might just suck it up and buy it at MOQ because it's astronomically cheap anyway. Also, I have no clue how to test displayio. I might have to replace the SiL1308EDL because it's nearing end-of-life. No lapse because it wasn't too long. 
+
+![Updated bit of schematic](Journal/06-19-26.png)
+
+**Total time spent: 0.4 hours**

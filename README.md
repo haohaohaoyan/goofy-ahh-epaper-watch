@@ -29,30 +29,33 @@ Note: the PCB is 75x40mm
 
 ### Note: outdated, resistors need to be updated to 0603 links
 Electronics: (I might change a few links to AliExpress but I feel like these are safer, and shipping will be cheaper when a bunch are from the same source)
-|Part|Quantity|Reference|Link|Price per unit (as of completion)|
-|---|---|---|---|---|
-|ESP32 S3 MINI 1 microcontroller|1|U1|(Digikey) https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1-N8/15295890|$5.43|
-|2000 mAh Lithium-ion polymer battery|1|N/A| (Adafruit) https://www.adafruit.com/product/2011|$12.50|
-|1.54 inch e-paper display (no breakout)|1|N/A| (Seeed Studio) https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html|$6.50|
-|24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|?|
-|USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|?|
-|SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|?|
-|MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|$0.76|
-|RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|
-|Si1308EDL power MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock, BE3 is less green but is otherwise identical]|$0.62|
-|0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|$0.14|
-|JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626|$0.11|
-|4.7 uF 0805 SMD capacitor|4|C1, C2, C12, C16| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|
-|1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724|$0.10|
-|0.1 uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|
-|2k ohm 0603 SMD resistor|1|R3| Generic component
-|4.7k ohm 0603 SMD resistor|2|R1, R2| Generic component
-|3 ohm 0603 resistor|1|R6| Generic component
-|10k ohm 0603 resistor|3|R5, R7, R8| Generic component
-|500 ohm 0603 resistor|1|R4| Generic component
+|Part|Quantity|Reference|Link|Price per unit (as of completion)|Price for all of part, including bulk ordering discounts|
+|---|---|---|---|---|---|
+|ESP32 S3 MINI 1 microcontroller|1|U1|(Digikey) https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1-N8/15295890|$5.43|$5.43|
+|2000 mAh Lithium-ion polymer battery|1|N/A| (Adafruit) https://www.adafruit.com/product/2011|$12.50|$12.50|
+|1.54 inch e-paper display (no breakout)|1|N/A| (Seeed Studio) https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html|$6.50|$6.50|
+|24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|?|?|
+|USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|?|?|
+|SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|?|?|
+|MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|$0.76|$0.76|
+|RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|$0.28|
+|Si1308EDL N-channel MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock]|$0.62|$0.62|
+|0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|$0.14|$0.14|
+|JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626|$0.11|$0.11|
+|4.7 uF 0805 SMD capacitor|4|C1, C2, C12, C16| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.44|
+|1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724|$0.10|$0.59|
+|0.1 uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.10|
+|2k ohm 0603 SMD resistor|1|R3| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF2001V/196183|$0.10|$0.10|
+|4.7k ohm 0603 SMD resistor|2|R1, R2| Generic component, (Digikey) https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT4K70/1760998|$0.10|$0.20|
+|3 ohm 0603 resistor|1|R6| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3GEYJ3R0V/282122|$0.10|$0.10|
+|10k ohm 0603 resistor|1|R5| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880|$0.10|$0.10|
+|5.1k ohm 0603 resistor|2|R7, R8| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268|$0.10|$0.20|
+|500 ohm 0603 resistor|1|R4| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RT0603BRD07500RL/17019950|$0.10|$0.10|
 |68 uH SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|?|
 |MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|
-|(Optional) 1x8 female 2.54mm header pins (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811821/17737805|$0.40|
+|(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/sullins-connector-solutions/NPPN081BFCN-RC/804810|$0.85??????????????|
+
+It's probably a good idea to order 1-2 extra of the resistors, capacitors, and diodes. 
 
 *LCSC parts have a minimum order quantity, so those prices won't be filled out until I find a way to get around that because I am NOT having 9 inductors lying around my house. They are marked with a question mark.
 
