@@ -272,7 +272,7 @@ I went back through the schematic to make the resistors all larger so that I cou
 
 Lapse: https://lapse.hackclub.com/timelapse/RpYLWTzBu84B
 
-**Ignore the length. Lapse broke and recorded me lollygagging. I'll have that fixed ASAP. I know that I approximately spent 2:45 on it because that's what it said before I submitted.**
+*Ignore the length. Lapse broke and recorded me lollygagging. I'll have that fixed ASAP. I know that I approximately spent 2:45 on it because that's what it said before I submitted.*
 
 ![FINAL PCB I SWEAR](Journal/06-18-26(1).png)
 ![schematic is now nice and neat](Journal/06-18-26(2).png)
