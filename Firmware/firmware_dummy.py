@@ -1,6 +1,7 @@
 import time, asyncio
 import board, fourwire, busio, digitalio
-import epaperdisplay, displayio, vectorio
+import epaperdisplay, displayio, vectorio, terminalio
+from adafruit_display_text import label
 
 # initialize epaper display
 epaper_bus = fourwire.FourWire(
@@ -19,23 +20,34 @@ epaper_display = epaperdisplay.EPaperDisplay(
     busy_pin = board.IO10
     )
 
-# timekeeping
-current_epoch_time = time.time()
+# important variables
 
-# Displayio roots for watch
+ideal_time = time.monotonic()
+current_face = "watch"
 
-display_terminal = displayio.CIRCUITPYTHON_TERMINAL
+async def update_time():
+    pass
 
-display_watch_base = 0 # placeholder
+async def sync_time():
+    pass
+
+# Main time loop & setting
+
+async def open(page):
+    # NOT preinitialized, because you can't just construct a displayio group in just one statement like a dictionary. You have to append them???? They're cobbled together when needed.
+    face = displayio.Group()
+    match page:
+        case "watch":
+            face.append()
+            epaper_display.root_group = face
+
 
 async def keep_time():
-    # This is pretty much a test! Super crappy
-    asyncio.sleep(60)
-    current_epoch_time += 60
-    keep_time()
-
-async def update_display():
-    pass #idk
-    # epaper_display.root_group = idja;mck
-
-keep_time()
+    # Sleep time with offset subtracted
+    await asyncio.sleep(60 - (offset))
+    # Ideal time assumes that *exactly* one second or minute has passed. Watch formats ideal time for displaying
+    ideal_time += 60
+    # Run the periodic process so that we can use the updated time
+    asyncio.create_task(update_time())
+    # Offset will be the difference between what the time is and what it should be. If the clock is dragging, the offset will be positive and subtracted, and if rushing it will be negative and added. 
+    offset = time.monotonic() - ideal_time

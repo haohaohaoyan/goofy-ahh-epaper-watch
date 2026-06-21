@@ -13,9 +13,10 @@ Current features:
 - Reset and boot buttons for programming
 - Hopefully won't explode (IMPORTANT)
 
-Firmware TBD. I'm waiting until I have the hardware to actually test it on. 
+Firmware is currently untested (asides from the timekeeping loop) and is only there for submission purposes. It is currently in CircuitPython but I will probably rewrite it in C at one point.
 
 Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, apply Kapton tape to the side of the battery that will lie in contact with the board, apply Kapton tape to backside of e-paper screen, use DOUBLE SIDED FOAM TAPE???
+
 ## Schematic
 
 ![schematic image ooh cool](PCB/schematic_image.png)
@@ -34,9 +35,9 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |ESP32 S3 MINI 1 microcontroller|1|U1|(Digikey) https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1-N8/15295890|$5.43|$5.43|
 |2000 mAh Lithium-ion polymer battery|1|N/A| (Adafruit) https://www.adafruit.com/product/2011|$12.50|$12.50|
 |1.54 inch e-paper display (no breakout)|1|N/A| (Seeed Studio) https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html|$6.50|$6.50|
-|24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|?|?|
-|USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|?|?|
-|SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|?|?|
+|24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
+|USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
+|SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|$0.06|$0.63*|
 |MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|$0.76|$0.76|
 |RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|$0.28|
 |Si1308EDL N-channel MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock]|$0.62|$0.62|
@@ -51,18 +52,18 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |10k ohm 0603 resistor|1|R5| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880|$0.10|$0.10|
 |5.1k ohm 0603 resistor|2|R7, R8| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268|$0.10|$0.20|
 |500 ohm 0603 resistor|1|R4| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RT0603BRD07500RL/17019950|$0.10|$0.10|
-|68 uH SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|?|
-|MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|
+|68 uH SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|$0.11|$1.13|
+|MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|$1.45|
 |(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/sullins-connector-solutions/NPPN081BFCN-RC/804810|$0.85??????????????|
 
 It's probably a good idea to order 1-2 extra of the resistors, capacitors, and diodes. 
 
-*LCSC parts have a minimum order quantity, so those prices won't be filled out until I find a way to get around that because I am NOT having 9 inductors lying around my house. They are marked with a question mark.
+*LCSC parts have a minimum order quantity, which means that you can't order less than a certain amount because that's too hard to handle. This means that extras will come with certain parts. The MOQ for most LCSC parts is 5 components, except the buttons and the inductors, which have an MOQ of 10. I don't know how to order under that amount.
 
 Non-electronics:
-- 3D-printed case (TODO)
-- One-piece 16mm fabric watch strap (Amazon - https://www.amazon.com/WOCCI-Military-One-piece-Ballistic-Buckle/dp/B0CTT8C1JG?th=1)
-- (Optional but probably needed) PCB coating for waterproofing
+- 3D-printed case
+- One-piece 16mm fabric watch strap (Amazon - https://www.amazon.com/WOCCI-Military-One-piece-Ballistic-Buckle/dp/B0CTT8C1JG?th=1)??
+- (Optional but probably needed) PCB coating for waterproofing 
 - Kapton tape for electronic insulation and protecting some components
 
 ## Credits:

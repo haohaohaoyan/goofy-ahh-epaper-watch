@@ -287,3 +287,19 @@ More cleanup for yesterday's mess. Fixing the back art was just moving the batte
 ![Updated bit of schematic](Journal/06-19-26.png)
 
 **Total time spent: 0.4 hours**
+
+# 6/20: Fixing the case a bit and sorting the mess that is asyncio
+
+The walls of text are probably a bit too hard to read, so I'll try adding some whitespace and seeing if it makes it more readable. 
+
+I saw on the 18th that I needed a cutout to accomodate for two resistors on the back that I forgot earlier. Since I had to add in another pad to remove an overhang, I stuck on a chamfer that would give way for those two resistors. The case shouldn't require any more changes unless I decide that a full cover is necessary to make it splashproof. 
+
+The MOQ issue with LCSC parts was still there, but I decided to just suck it up and put in the price for ordering that many components. With that, I shoved everything into a calculator and the final sum for all of the components (not counting the PCB) is just under $40. Not great, but much better than some other watches. Most of the cost came from the battery, so that's something I could change. Switching to a 1200mAh isn't too hard, but I don't think it's worth it for the price-power ratio. I may just look at Alibaba and see if there's a better option there. 
+
+Most of the time today was spent working on the dummy firmware. I finished up a bit of a logic cycle concept and started tossing it together. I'm planning on having everything asynchronous so the timekeeping will run in the background and update variables/run functions to update the time. Watch "faces" will be displayio groups that are assembled on call (because I can't predefine them conveniently because you have to use the append function). The main clock will be a watch "face" that will fetch the current date, format it, and display it upon call, and the background time loop will also call a function that updates this face specifically when every minute passes. I'll use a function to switch faces instead of some dictionary because the NTP sync will be more like a function rather than a face, but can be organized along with the faces for convenience. I'm not sure how to run functions upon button presses, because I don't think event listeners (one of the few good parts of Javascript) exist in Python. I also refactored the time loop to act asynchronously, because I may have forgotten about that and shoved in a blocking loop instead.
+
+No lapse today because most of it was tracked in Hackatime and the parts that would have been lapsed took like 15 minutes. 
+
+![the new addition to the case](Journal/06-20-26.png)
+
+**Total time spent: 1 hour** 
