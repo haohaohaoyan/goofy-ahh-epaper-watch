@@ -303,3 +303,11 @@ No lapse today because most of it was tracked in Hackatime and the parts that wo
 ![the new addition to the case](Journal/06-20-26.png)
 
 **Total time spent: 1 hour** 
+
+# 6/21: Searching up a battery alternative
+
+I was dragged to the beach by my family today, but I managed to squeeze some progress in while waiting for parking and in traffic jams. I thought that the final sum of $40 or so for only the components was a bit high, so I tried to find an alternative to the most expensive thing on the list, which was the battery. I wanted to keep approximately the same form factor but find something cheaper than $12.50. Finding a similarly sized battery, especially with similar thickness, was pretty hard. The most common options were 103450 batteries, which were too thick (the current battery and case when added together have a height of about 14mm, which is already quite bulky). Speaking of these things, I'm still thinking about how friggin bulky this is. 7.5x4cm is ridiculous for a watch. Either way, I ended up looking on Alibaba and somehow found a 2000mAh battery with the same dimensions as the Adafruit one (at https://www.alibaba.com/product-detail/HWE-Cheap-lipo-683566-3-7V_1601094604367.html). The only problem is that it's a 3-pin JST connector instead of a 2-pin. Apparently that third pin is for communication but can just be tied to ground sometimes. I don't really know too much about it but I'll probably keep the Adafruit battery because the Alibaba one is kind of sketchy. $1.99 is a killer deal though so I'll try buying one just for funsies. Also, a LOT of things on Alibaba have like really high minimum order quantities. I'm talking in the thousands. I didn't actually do much programming work today and it was mostly research for a short period of time, so there's no lapse. Here's a picture of the listing I was looking at. To be honest, I don't even want to make huge changes anymore. I even planned on submitting it on Friday. I just want to get this over with and make a 2.0 with all of my planned features sometime in the future and hopefully it won't be an enormous doohickey that is bad at its job like how this thing is looking to be. Isn't it funny how we often lose the most motivation when we're close to finishing?
+
+![Should I?](Journal/06-21-26.png)
+
+**Total time spent: 0.3 hours**
