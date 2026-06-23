@@ -32,9 +32,9 @@ Note: the PCB is 75x40mm
 Electronics: (I might change a few links to AliExpress but I feel like these are safer, and shipping will be cheaper when a bunch are from the same source)
 |Part|Quantity|Reference|Link|Price per unit (as of completion)|Price for all of part, including bulk ordering discounts|
 |---|---|---|---|---|---|
-|ESP32 S3 MINI 1 microcontroller|1|U1|(Digikey) https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1-N8/15295890|$5.43|$5.43|
+|ESP32-S3-MINI-1-N8 microcontroller|1|U1|(LCSC) https://www.lcsc.com/product-detail/C2913206.html|$4.73|$4.73|
 |2000 mAh Lithium-ion polymer battery|1|N/A| (Adafruit) https://www.adafruit.com/product/2011|$12.50|$12.50|
-|1.54 inch e-paper display (no breakout)|1|N/A| (Seeed Studio) https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html|$6.50|$6.50|
+|1.54 inch e-paper display (no breakout)|1|N/A| (Waveshare) https://www.waveshare.com/product/1.54inch-e-paper.htm|$5.99|$5.99|
 |24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
 |SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|$0.06|$0.63*|
@@ -58,7 +58,7 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 
 It's probably a good idea to order 1-2 extra of the resistors, capacitors, and diodes. 
 
-*LCSC parts have a minimum order quantity, which means that you can't order less than a certain amount because that's too hard to handle. This means that extras will come with certain parts. The MOQ for most LCSC parts is 5 components, except the buttons and the inductors, which have an MOQ of 10. I don't know how to order under that amount.
+*LCSC parts have a minimum order quantity, which means that you can't order less than a certain amount because that's too hard to handle. This means that extras will come with certain parts. The MOQ for most LCSC parts is 5 components, except the buttons and the inductors, which have an MOQ of 10, and the ESP32 itself which has an MOQ of 1. I don't know how to order under that amount.
 
 Non-electronics:
 - 3D-printed case

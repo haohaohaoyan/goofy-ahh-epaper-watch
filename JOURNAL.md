@@ -311,3 +311,15 @@ I was dragged to the beach by my family today, but I managed to squeeze some pro
 ![Should I?](Journal/06-21-26.png)
 
 **Total time spent: 0.3 hours**
+
+# 6/22: Just a few extra fixes
+
+While I was on the mission to cut costs, I found that the Waveshare equivalent to the Seeed Studio screen was an entire 70 cents cheaper! Wowee! Plus, the compatibility is less of an issue here because I pretty much yoinked their driver too. I'm still looking for cheaper batteries but almost every single one is 103450. I even considered swapping to that size so I could make the PCB less wide, but that means making the watch like 16mm thick total and that would suck to wear more than it already is looking. 
+
+I'm still working on the firmware and have decided that this firmware is solely for demonstration purposes because I'm probably going to have to reprogram it in C++ anyway because of the RAM and performance that CircuitPython uses by default. Plus, attachInterrupt looks quite convenient for tracking button presses, rather than having another endless loop. Apparently, attachInterrupt is also good for waking up devices from sleep so I could probably get away with switching to a smaller battery capacity (the 1200mAh lipo that's thinner) and just have it on sleep mode most of the time to cut down on battery usage. Considering the dummy status, I'm probably just going to shove in a bunch of nonsensical stuff in the CircuitPython script because it's a dummy anyway. I'm gonna have to scrap through C++ when I'm building it. Speaking of which, this will be the second time I learn a language out of necessity, the first being when I was forced to learn JS for the Congressional App Challenge by the resident vibecoder of our team. Hopefully removing the necessity for it to actually plausibly work should let me finish faster.
+
+I regenerated the production files just in case, and updated the Forge thumbnail. I feel like I should be getting done with this faster so I can actually build it but I'm just steadily making slow progress. I guess I'll finish eventually. No lapse today because it was mostly on Hackatime and pretty short too. What do I even put as a picture here? I guess I can take a picture of the current Forge thing?
+
+![yeah you can barely tell](Journal/06-22-26.png)
+
+**Total time spent: 0.5 hours**
