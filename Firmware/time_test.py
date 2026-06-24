@@ -7,7 +7,8 @@ current_time = math.floor(time.time())
 async def display_time():
     # print(time.strftime(f'{current_time} %I %M %S %p', time.localtime(current_time)))
     for i in range(20):
-        print(math.factorial(i))
+        # print(math.factorial(i))
+        pass
 
 # Circuitpy doesn't have perf counter
 
@@ -32,7 +33,7 @@ async def loop():
     total += prev - post
     print(f'Total: {total}')
 
-    
-if __name__ == "__main__":
-    while True:
-        asyncio.run(loop())
+while True:
+    asyncio.run(loop())
+    # During the wait, the loop awaits and lets other things run
+    print("oiadjm;ckm")

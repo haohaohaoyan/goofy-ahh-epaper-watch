@@ -22,11 +22,23 @@ epaper_display = epaperdisplay.EPaperDisplay(
     busy_pin = board.IO10
     )
 
+# io buttons
+
+button_a = digitalio.DigitalInOut(board.IO26)
+button_a.direction = digitalio.Direction.INPUT
+button_a.pull = digitalio.Pull.UP
+
+button_b = digitalio.DigitalInOut(board.IO21)
+button_b.direction = digitalio.Direction.INPUT
+button_b.pull = digitalio.Pull.UP
+
 # important variables
 
 ideal_time = time.monotonic()
 actual_time = 0 # Replace with the ACTUAL time on NTP sync
 current_face = "watch"
+
+current_selection = "watch"
 
 # Function that updates time and the watch face to match
 async def update_time():
@@ -44,7 +56,7 @@ async def open(page):
     face = displayio.Group()
     match page:
         case "watch":
-            face.append(label.Label(terminalio.FONT, actual_time, 0x000000)) # bad bc i dont wanna spend too much time on this
+            face.append(label.Label(terminalio.FONT, str(actual_time), 0x000000)) # bad bc i dont wanna spend too much time on this
             current_face = "watch"
             epaper_display.root_group = face
         case "menu":
@@ -67,6 +79,16 @@ async def keep_time(): # constantly running loop that tracks time with time.mono
 # On startup: open watchface, sync with NTP (assuming from poweroff), start timekeeping
 asyncio.create_task(open("watch"))
 while True:
+    # tick time
     asyncio.run(keep_time())
 
-# Pretend there's attachInterrupts for when the buttons need to be pressed. 
+    # check every second if button B is pressed and not on menu, if so will open menu
+    if not button_b.value and current_face != "menu":
+        open("menu")
+    # button functions for menu (i friggin miss event listeners)
+    elif current_face == "menu":
+        if not button_b.value:
+            pass # change selection
+        elif not button_a.value:
+            pass # select
+    # The buttons should be tracked with attachInterrupts in C. For now, the program checks them once per second when the asyncio clock sleeps. 

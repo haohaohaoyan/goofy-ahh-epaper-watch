@@ -26,6 +26,10 @@ Note: the PCB is 75x40mm
 
 ![pcb image ooh cool](PCB/PCB_image.png)
 
+## Case
+
+![case image ooh cool](Case/case_image.png)
+
 ## BOM:
 
 ### Note: outdated, resistors need to be updated to 0603 links

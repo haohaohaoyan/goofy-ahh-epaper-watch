@@ -323,3 +323,19 @@ I regenerated the production files just in case, and updated the Forge thumbnail
 ![yeah you can barely tell](Journal/06-22-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 6/23: Wasting time
+
+I really wanted to make progress on that firmware, so that's what I did today. Also edited the PCB again. That's like the fifth time now.
+
+I was considering how to run actions on button presses when I both couldn't use a regular event listener or attachInterrupt in CircuitPython and also didn't want a constantly running while loop. Instead, because it's a prototype and I don't have to think as hard, I just had the main time ticking loop also check for button presses. It's literally just checking if it's pressed every second, and if the menu screen is pulled up or not. The plan is to have B open the menu from all other watch apps, while A is free for the app's functions. While on the menu, B cycles through the options and A selects one. I already have a function to cobble together the displayio group and put it on the display, so it should just run that. I only got to doing the buttons, and a bit of work on the functions again. Not much. I planned on adding NTP (that's why the settings.toml is there but blank) but didn't get to it.
+
+While doing that I was a bit unsure about their pull so I checked the Orpheus Pico's PCB for it. While my buttons are fine, this started another thing. I was thinking about thicker power traces earlier, but seeing how FAT the Orpheus pico's VBUS and 3V3 traces are, I decided to thicken mine too. My 5v traces are now .4mm in width and 3V3 traces are .3mm. I also have this problem of the only thing connecting the ground zone of the entire main battery charging circuit being connected to the larger ground zone attached to the battery and charger by an area about 2 millimeters wide. I hope that's ok, but to be honest it probably is because plenty of circuits just have a single ground wire and it's fine??? I'm not exactly sure. Either way, the main power traces are thicker now and hopefully that'll be more stable. I also edited some silkscreens because some of my old edits disappear when I refresh the footprints, and change a part of the back silkscreen back to exposed copper because that edit got removed when I changed the height of the PCB. There used to be more silkscreen below 4 capacitors in the e-paper circuit and I squeezed their silkscreens into a hard-to-read arrangement. I moved the silkscreen elsewhere and the labels for those parts are moved to a clearer space. As usual, prod files are regenerated and photos are updated. I also forgot a case photo, so I'll shove that in. I tacked my name onto the schematic too, so that needs to be updated.
+
+![FINAL FINAL FINAL FINAL](Journal/06-23-26(1).png)
+
+I sure do hope I'll actually finish before the end of the friggin month. I NEED to lock in on Horizons. AAAAAAAAAAAGHGHHHGHGHGHGH!!! No lapse today because it was mostly on Hackatime and the hardware bit was "too short" (I expected it to be like 10 minutes but it ended up being like 30 but it's just in the void now). Here's the picture that I'm using for the case.
+
+![nice case we got ig](Journal/06-23-26(2).png)
+
+**Total time spent: 1.2 hour (i dont wanna get deflated bc no lapse aughhh)**

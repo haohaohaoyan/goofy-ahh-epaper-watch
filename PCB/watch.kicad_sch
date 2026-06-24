@@ -5740,6 +5740,17 @@
 		)
 		(uuid "c2d4a9af-51b6-4b72-b55b-4dea401605a5")
 	)
+	(text "Neutron e-paper watch, by Haoyan Li"
+		(exclude_from_sim no)
+		(at 203.708 168.656 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.2223)
+			)
+		)
+		(uuid "cfb5e961-536f-4f03-b236-e0c944418e50")
+	)
 	(junction
 		(at 115.57 125.73)
 		(diameter 0)
@@ -10746,7 +10757,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 50.546 122.682 90)
+			(at 52.07 123.952 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
