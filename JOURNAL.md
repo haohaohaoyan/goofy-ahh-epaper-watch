@@ -339,3 +339,13 @@ I sure do hope I'll actually finish before the end of the friggin month. I NEED 
 ![nice case we got ig](Journal/06-23-26(2).png)
 
 **Total time spent: 1.2 hour (i dont wanna get deflated bc no lapse aughhh)**
+
+# 6/24: And the boulder rolls back down
+
+I did the thing again. ALL of the circuitry on the PCB scrapped. I'm changing the 2000mAh battery to 1200mAh because if I use C, I can just have it settle into sleep where it'll still running the RTC and it'll last much longer, giving me room to lower the battery capacity. I did hear that I might need to add a crystal or the RTC module again to keep it accurate because the ESP32's accurate RTC is not active during sleep. The external RTC seems easier to add, but it takes up space and is a bit expensive. The main thing is that I'm redoing the entire PCB again because I still think it's too large. The new size is 66x36mm, which is a 1cm improvement in length and 4mm in height. It could be less long but that means taking out the pin labels on the IO and that's not a great idea. The battery thickness has only gone down 1mm though, but that wasn't really too much of an issue in the first place as long as it wasn't TOO thick. I only got through rewiring the power circuit and some of the e-paper display driver, but it shouldn't be too hard and I have time tomorrow (I think). Also, to me it's kind of funny how close the resistors and capacitors in the power circuit have to be to each other but how spread out everything else is. The photo is of the current in-progress PCB. I keep forgetting that alt texts don't show up for regular viewers. My current plan is to submit this by Sunday, and then lock in so hard for Horizons that my ancestors will recoil. 
+
+Lapse (finally): https://lapse.hackclub.com/timelapse/ulJo0iGdtniw
+
+![Check out this mess](Journal/06-24-26.png)
+
+**Total time spent: 1 hour**

@@ -17,16 +17,16 @@ Firmware is currently untested (asides from the timekeeping loop) and is only th
 
 Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, apply Kapton tape to the side of the battery that will lie in contact with the board, apply Kapton tape to backside of e-paper screen, use DOUBLE SIDED FOAM TAPE???
 
-## Schematic
+## Schematic (image outdated, will be updated once complete due to frequent revisions)
 
 ![schematic image ooh cool](PCB/schematic_image.png)
 
-## PCB
+## PCB (image outdated, will be updated once complete due to frequent revisions)
 Note: the PCB is 75x40mm
 
 ![pcb image ooh cool](PCB/PCB_image.png)
 
-## Case
+## Case (image outdated, will be updated once complete due to frequent revisions)
 
 ![case image ooh cool](Case/case_image.png)
 
@@ -37,7 +37,7 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |Part|Quantity|Reference|Link|Price per unit (as of completion)|Price for all of part, including bulk ordering discounts|
 |---|---|---|---|---|---|
 |ESP32-S3-MINI-1-N8 microcontroller|1|U1|(LCSC) https://www.lcsc.com/product-detail/C2913206.html|$4.73|$4.73|
-|2000 mAh Lithium-ion polymer battery|1|N/A| (Adafruit) https://www.adafruit.com/product/2011|$12.50|$12.50|
+|1200 mAh Lithium-ion polymer battery|1|N/A| (Adafruit, use Digikey if out of stock) https://www.adafruit.com/product/258|$9.95|$9.95|
 |1.54 inch e-paper display (no breakout)|1|N/A| (Waveshare) https://www.waveshare.com/product/1.54inch-e-paper.htm|$5.99|$5.99|
 |24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
