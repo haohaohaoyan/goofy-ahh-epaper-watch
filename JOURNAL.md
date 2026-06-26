@@ -349,3 +349,15 @@ Lapse (finally): https://lapse.hackclub.com/timelapse/ulJo0iGdtniw
 ![Check out this mess](Journal/06-24-26.png)
 
 **Total time spent: 1 hour**
+
+# More progress on revision number... what now? Also added an oscillator.
+
+So I did need to add a crystal. I thought it wasn't going to be too hard because SMD crystals are tiny, but they are literally the bane of my existence. Not only will they not work properlly with the smallest wrong number, but not even the datasheets will tell you what the resistor and capacitor values are. I had to dig through this 2008 guide (https://www.crystek.com/documents/appnotes/pierce-gateintroduction.pdf) which was surprisingly great and actually explained a lot about what was going on. Halfway through, I even tried to switch to an RTC IC because I hoped that it had a built-in crystal with all of the jargon sorted out but the first result on Digikey STILL NEEDED A SEPARATE OSCILLATOR. I could have gone back to the DS3231MZ/V+ but I think I just forgot about it at that time. Thanks to that PDF though, I got plausible values for the resistor and capacitors and the current set of components is smaller than the DS3231MZ with its 4 lackeys. All I need to do for the firmware is rewrite the entire thing in C and set the RTC source to the external crystal.
+
+As for the other changes to the board, I added two extra decoupling capacitors, one to the 3V3 source and another to the RESET/EN button, because I finally found that the documentation for the ESP32 had example schematics. One of the main things I had to do to reduce space on this revision was moving the (relatively) HUMONGOUS inductor to below the microcontroller. I couldn't put it beneath the e-paper display because of its height, and it used to be squeezed between that and the MCU. It isn't too bad of a move, because a lot of the data lines for the e-paper display were moved to the other side of the PCB, giving it some space for wires on the front. I'm going to have to sacrifice some of the silkscreens, but that's fine as long as it works well at this point. Another change I made that changed it a lot was moving the USB-C receptacle to below the middle of the e-paper display, giving more breathing room for the power circuit, making it thinner, and making more space for the new arrangements. No progress on the firmware. The README and production won't be updated until this revision is done.
+
+Lapse: 
+
+![Cleaning up the mess](Journal/06-26-26.png)
+
+**Total time spent: 2.7 hours**

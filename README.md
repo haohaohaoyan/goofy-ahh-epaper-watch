@@ -41,21 +41,25 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |1.54 inch e-paper display (no breakout)|1|N/A| (Waveshare) https://www.waveshare.com/product/1.54inch-e-paper.htm|$5.99|$5.99|
 |24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
+|FC-135 32.7680KA-A5 32kHz crystal oscillator|1|Y1|?|?|?|
 |SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|$0.06|$0.63*|
 |MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|$0.76|$0.76|
 |RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|$0.28|
 |Si1308EDL N-channel MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock]|$0.62|$0.62|
 |0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|$0.14|$0.14|
 |JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626|$0.11|$0.11|
-|4.7 uF 0805 SMD capacitor|4|C1, C2, C12, C16| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.44|
+|4.7 uF 0805 SMD capacitor|4|C1, C2, C12| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.44|
 |1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724|$0.10|$0.59|
-|0.1 uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.10|
+|0.1 uF 0805 SMD capacitor|1|C16| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.10|
+|22uF 0805 SMD capacitor|1|C17|?|?|?|
+|13pF 0805 SMD capacitor|2|C18, C19|?|?|?|
 |2k ohm 0603 SMD resistor|1|R3| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF2001V/196183|$0.10|$0.10|
 |4.7k ohm 0603 SMD resistor|2|R1, R2| Generic component, (Digikey) https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT4K70/1760998|$0.10|$0.20|
 |3 ohm 0603 resistor|1|R6| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3GEYJ3R0V/282122|$0.10|$0.10|
 |10k ohm 0603 resistor|1|R5| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880|$0.10|$0.10|
 |5.1k ohm 0603 resistor|2|R7, R8| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268|$0.10|$0.20|
 |500 ohm 0603 resistor|1|R4| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RT0603BRD07500RL/17019950|$0.10|$0.10|
+|10m ohm 0603 resistor|1|R9| Generic component, (Digikey) https://www.digikey.com/en/products/detail/susumu/RL0816T-R010-F/2734741|$0.27||$0.27|
 |68 uH SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|$0.11|$1.13|
 |MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|$1.45|
 |(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/sullins-connector-solutions/NPPN081BFCN-RC/804810|$0.85??????????????|
