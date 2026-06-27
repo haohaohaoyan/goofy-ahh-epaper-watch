@@ -350,14 +350,28 @@ Lapse (finally): https://lapse.hackclub.com/timelapse/ulJo0iGdtniw
 
 **Total time spent: 1 hour**
 
-# More progress on revision number... what now? Also added an oscillator.
+# 6/25: More progress on revision number... what now? Also added an oscillator.
 
 So I did need to add a crystal. I thought it wasn't going to be too hard because SMD crystals are tiny, but they are literally the bane of my existence. Not only will they not work properlly with the smallest wrong number, but not even the datasheets will tell you what the resistor and capacitor values are. I had to dig through this 2008 guide (https://www.crystek.com/documents/appnotes/pierce-gateintroduction.pdf) which was surprisingly great and actually explained a lot about what was going on. Halfway through, I even tried to switch to an RTC IC because I hoped that it had a built-in crystal with all of the jargon sorted out but the first result on Digikey STILL NEEDED A SEPARATE OSCILLATOR. I could have gone back to the DS3231MZ/V+ but I think I just forgot about it at that time. Thanks to that PDF though, I got plausible values for the resistor and capacitors and the current set of components is smaller than the DS3231MZ with its 4 lackeys. All I need to do for the firmware is rewrite the entire thing in C and set the RTC source to the external crystal.
 
 As for the other changes to the board, I added two extra decoupling capacitors, one to the 3V3 source and another to the RESET/EN button, because I finally found that the documentation for the ESP32 had example schematics. One of the main things I had to do to reduce space on this revision was moving the (relatively) HUMONGOUS inductor to below the microcontroller. I couldn't put it beneath the e-paper display because of its height, and it used to be squeezed between that and the MCU. It isn't too bad of a move, because a lot of the data lines for the e-paper display were moved to the other side of the PCB, giving it some space for wires on the front. I'm going to have to sacrifice some of the silkscreens, but that's fine as long as it works well at this point. Another change I made that changed it a lot was moving the USB-C receptacle to below the middle of the e-paper display, giving more breathing room for the power circuit, making it thinner, and making more space for the new arrangements. No progress on the firmware. The README and production won't be updated until this revision is done.
 
-Lapse: 
+Lapse: https://lapse.hackclub.com/timelapse/Jt1ZnzMaKBZ0
 
-![Cleaning up the mess](Journal/06-26-26.png)
+![Cleaning up the mess](Journal/06-25-26.png)
 
 **Total time spent: 2.7 hours**
+
+# 6/26: The summit's in sight (but not very close)
+
+Just more wiring from the last revision. The schematic should be fine, but I'm still not sure about the crystal capacitors. I may or may not have miscalculated greatly and might need to switch to 22pF caps which won't be great. I'm still not going to update most things until the PCB is completely done and I've settled all issues. 
+
+I had to really make a bunch of sacrifices with this revision, namely most of the background art. I moved a LOT of the traces to the back, including all of the data lines for the e-paper display. This gave me more space for the EPD power components, which I still managed to squeeze on. I found that while there was a lot of space available, it was still very cramped because of a few critical wires that couldn't be moved, like the 3V3 lines and the area dedicated to the EPD data lines. I had multiple situations where I set aside routing a part and when I do need to add it, there is no space or all of the wires are blocked off. I even had to shift all of the data lines down about 2 millimeters to squeeze in a via for the GDR and RESE pin handlers. The new capacitor on the RESET/EN button was also new and the space there was already very cramped because of the data lines and IO pin connections. To solve that, I moved the vias for the buttons from beneath the microcontroller to just outside it, also moving the DC and CS traces to accomodate. This gave enough room to move all of the IO traces downward and even more so for the top few, making them longer in exchange for getting enough space for the capacitor. I know a lot of the trace lengths aren't optimal, but they were the only way I thought of that could get enough space. One of the worst parts was forgetting about the charge indicator light, only to finish the ENTIRE REST OF THE PCB and leave it for last by accident, and I didn't want to make a via for both connections to connect it to where I want it to be. I just settled on putting it right next to the USB-C port, which is risky but it works, I guess. Adding in the crystal was surprisingly easy, because there was literally nothing where it was gonna go anyway. I don't think there really is any space for silkscreen art asides from the back now, but as long as it works it's ok. 
+
+The lapse for yesterday was missing (forgot to paste in), so it's fixed now. I think that if I just add the NTP feature, I should be able to toss it in for review and LOCK IN FOR HORIZONSSSSS
+
+Lapse: https://lapse.hackclub.com/timelapse/_XJ8ufc8aAVF
+
+![Effectively done?](Journal/06-26-26.png)
+
+**Total time spent: 1.5 hours**

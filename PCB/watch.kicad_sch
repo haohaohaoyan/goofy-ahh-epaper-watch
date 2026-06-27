@@ -5984,6 +5984,16 @@
 		)
 		(uuid "cfb5e961-536f-4f03-b236-e0c944418e50")
 	)
+	(text "10m Ohm resistor is optional according to Espressif docs\n"
+		(exclude_from_sim no)
+		(at 192.532 159.258 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e7767ff4-04c2-4799-a8b0-9609d6379b83")
+	)
 	(junction
 		(at 83.82 125.73)
 		(diameter 0)
@@ -6606,7 +6616,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 129.54) (xy 196.85 129.54)
+			(xy 196.85 129.54) (xy 208.28 129.54)
 		)
 		(stroke
 			(width 0)
@@ -6793,16 +6803,6 @@
 			(type default)
 		)
 		(uuid "4db65f60-2623-4d89-a18d-bf4cbce3a840")
-	)
-	(wire
-		(pts
-			(xy 201.93 140.97) (xy 201.93 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e0f4117-a906-415b-9895-eb5b5a784168")
 	)
 	(wire
 		(pts
@@ -7566,7 +7566,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 147.32) (xy 196.85 147.32)
+			(xy 196.85 147.32) (xy 208.28 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7673,16 +7673,6 @@
 			(type default)
 		)
 		(uuid "d0e22216-9d89-451b-b4ad-c3ec345cf8e0")
-	)
-	(wire
-		(pts
-			(xy 201.93 135.89) (xy 208.28 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d19a8537-b82c-4678-ad7b-a245e308f59b")
 	)
 	(wire
 		(pts
@@ -7816,16 +7806,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 135.89) (xy 201.93 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9398ef4-d60c-4181-a156-ef167e1e232a")
-	)
-	(wire
-		(pts
 			(xy 198.12 82.55) (xy 198.12 86.36)
 		)
 		(stroke
@@ -7893,16 +7873,6 @@
 			(type default)
 		)
 		(uuid "f19b6ddb-feab-4045-8e0a-16ea854b4a73")
-	)
-	(wire
-		(pts
-			(xy 201.93 140.97) (xy 208.28 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f24794de-67a4-47d6-8fd8-ec5394d7b787")
 	)
 	(wire
 		(pts
@@ -8195,7 +8165,7 @@
 		(uuid "824f2adb-c83f-41bf-a94c-035437cf4688")
 	)
 	(label "XTAL_32K_N"
-		(at 208.28 140.97 0)
+		(at 208.28 147.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8305,7 +8275,7 @@
 		(uuid "ad013eb4-b952-40a2-9f58-d66b2c02d234")
 	)
 	(label "XTAL_32K_P"
-		(at 208.28 135.89 0)
+		(at 208.28 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13785,7 +13755,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10m"
+		(property "Value" "10m (NC)"
 			(at 198.12 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
