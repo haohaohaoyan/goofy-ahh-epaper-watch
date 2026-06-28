@@ -51,8 +51,8 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |4.7 uF 0805 SMD capacitor|4|C1, C2, C12| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.44|
 |1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724|$0.10|$0.59|
 |0.1 uF 0805 SMD capacitor|1|C16| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.10|
-|22uF 0805 SMD capacitor|1|C17|?|?|?|
-|13pF 0805 SMD capacitor|2|C18, C19|?|?|?|
+|22uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A226KQCLRNC/5961171|$0.14|$0.14|
+|15pF? 0805 SMD capacitor|2|C18, C19| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/CC0805JPNPO9BN150/11491074|$0.10|$0.20| 
 |2k ohm 0603 SMD resistor|1|R3| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF2001V/196183|$0.10|$0.10|
 |4.7k ohm 0603 SMD resistor|2|R1, R2| Generic component, (Digikey) https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT4K70/1760998|$0.10|$0.20|
 |3 ohm 0603 resistor|1|R6| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3GEYJ3R0V/282122|$0.10|$0.10|
@@ -64,7 +64,7 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|$1.45|
 |(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/sullins-connector-solutions/NPPN081BFCN-RC/804810|$0.85??????????????|
 
-It's probably a good idea to order 1-2 extra of the resistors, capacitors, and diodes. 
+It's probably a good idea to order 1-2 extra of the small components, like the capacitors, resistors, and diodes. The crystal could also have a spare because of how easy it is to fry them
 
 *LCSC parts have a minimum order quantity, which means that you can't order less than a certain amount because that's too hard to handle. This means that extras will come with certain parts. The MOQ for most LCSC parts is 5 components, except the buttons and the inductors, which have an MOQ of 10, and the ESP32 itself which has an MOQ of 1. I don't know how to order under that amount.
 
@@ -76,7 +76,7 @@ Non-electronics:
 
 ## Credits:
 
-yassin for looking over my battery circuit and pointing out that I tried to shove 5v into 3v3 (I know I'm an idiot)
+yassin for looking over my battery circuit and pointing out that I tried to shove 5v into 3v3 (I know I'm an idiot) and looking at my crystal
 Kai Pereira for responding to my questions on the hardware slack and for his Overglade badge which I used as a bit of a reference to make sure I'm not doing anything stupid with the e-paper
 Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that, do NOT give me any credit for that) (I cannot stress enough that all credit should go to them because I literally do not know anything about e-paper displays. Heck, the entire project is literally like 3 example schematics that are wired together in a way that looks like it works. I hope I know what I'm doing and I will binge a BUNCH of high-school-level electronics courses afterward.)
 The OCGC Google Chat (a bunch of my friends) for name help

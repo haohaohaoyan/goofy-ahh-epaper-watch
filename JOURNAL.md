@@ -375,3 +375,15 @@ Lapse: https://lapse.hackclub.com/timelapse/_XJ8ufc8aAVF
 ![Effectively done?](Journal/06-26-26.png)
 
 **Total time spent: 1.5 hours**
+
+# 6/27: Just looking at the parts again
+
+I went to the National STEM Festival today and there were loads of traffic jams, and some things came up in the afternoon on the groupchat so I didn't have a lot of time. I did get to yap to a bunch of people on Slack on the way and even got them to consider adding mini hotplates to the Forge shop. I can't really believe that the ysws orgs just happen to be other nerds like me.
+
+So I recalculated the capacitors for the crystal and apparently on the ESP32s you don't need to factor in the diode capacitances. The capacitors are now set at 15pF assuming 5pF PCB strays, which should be OK. Also worked a bit more on the BOM and hopefully will do the case tomorrow. To be honest, I'm about ready to just shove that NTP in and then submit. No work on the PCB asides from shifting around a few silkscreens and resizing them to fit on the new PCB size. I haven't done the back art yet, though. Things to do tomorrow. Tomorrow. Tomorrow. Tomorrow.
+
+There was going to be a lapse today but it ended up being 30 minutes of googling how to accurately guess PCB stray capacitance. 
+
+![I guess things are moving](Journal/06-27-26.png)
+
+**Total time spent: 0.5 hours**

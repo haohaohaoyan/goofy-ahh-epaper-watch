@@ -5953,6 +5953,16 @@
 		)
 		(uuid "8ae365fe-fe8a-4aff-a757-a51f093f5d67")
 	)
+	(text "Assuming no diode capacitance and 5pF PCB strays\n"
+		(exclude_from_sim no)
+		(at 192.532 156.972 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "989cf1ec-a36d-40d4-b50b-059ab1ec03f7")
+	)
 	(text "Microcontroller & IO Pins"
 		(exclude_from_sim no)
 		(at 81.534 16.002 0)
@@ -11805,7 +11815,7 @@
 				)
 			)
 		)
-		(property "Value" "13pF?"
+		(property "Value" "15pF?"
 			(at 184.15 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13045,7 +13055,7 @@
 				)
 			)
 		)
-		(property "Value" "13pF?"
+		(property "Value" "15pF?"
 			(at 184.15 153.416 90)
 			(show_name no)
 			(do_not_autoplace no)
