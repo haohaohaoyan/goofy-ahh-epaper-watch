@@ -37,7 +37,7 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |Part|Quantity|Reference|Link|Price per unit (as of completion)|Price for all of part, including bulk ordering discounts|
 |---|---|---|---|---|---|
 |ESP32-S3-MINI-1-N8 microcontroller|1|U1|(LCSC) https://www.lcsc.com/product-detail/C2913206.html|$4.73|$4.73|
-|1200 mAh Lithium-ion polymer battery|1|N/A| (Adafruit, use Digikey if out of stock) https://www.adafruit.com/product/258|$9.95|$9.95|
+|1200 mAh 603450 Lithium-ion polymer battery|1|N/A| (Amazon, but use anywhere) https://www.amazon.com/1200mAh-Battery-Rechargeable-Lithium-Connector/dp/B09FLG39NX|$8.99|$8.99|
 |1.54 inch e-paper display (no breakout)|1|N/A| (Waveshare) https://www.waveshare.com/product/1.54inch-e-paper.htm|$5.99|$5.99|
 |24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
@@ -79,4 +79,5 @@ Non-electronics:
 yassin for looking over my battery circuit and pointing out that I tried to shove 5v into 3v3 (I know I'm an idiot) and looking at my crystal
 Kai Pereira for responding to my questions on the hardware slack and for his Overglade badge which I used as a bit of a reference to make sure I'm not doing anything stupid with the e-paper
 Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that, do NOT give me any credit for that) (I cannot stress enough that all credit should go to them because I literally do not know anything about e-paper displays. Heck, the entire project is literally like 3 example schematics that are wired together in a way that looks like it works. I hope I know what I'm doing and I will binge a BUNCH of high-school-level electronics courses afterward.)
+Matters of Intrigue for a good video on the ESP32 S3's timing (https://www.youtube.com/watch?v=fZAR8WTKiSg)
 The OCGC Google Chat (a bunch of my friends) for name help

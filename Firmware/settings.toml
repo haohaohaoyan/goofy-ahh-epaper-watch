@@ -1,0 +1,2 @@
+CIRCUITPY_WIFI_SSID = "idk your wifi ssid"
+CIRCUITPY_WIFI_PASSWORD = "idk your wifi password"

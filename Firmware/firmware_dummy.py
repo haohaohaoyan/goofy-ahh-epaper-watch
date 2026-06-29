@@ -1,9 +1,14 @@
 # big dummy firmware thing that theoretically works in circuitpy but i'm gonna have to rewrite in c anyway for performance
+# This probably isn't going to work. Everything is sloppily put together with what CircuitPython can do right now and the menu 
+# isn't functioning but it's just a bunch of extra functions for when that's necessary. Hold B for a minute to sync NTP, I guess.
+# I'll probably have to rewrite in C for attachInterrupt anyway
 
 import time, asyncio
 import board, fourwire, busio, digitalio
 import epaperdisplay, displayio, vectorio, terminalio
 from adafruit_display_text import label
+import os, wifi, rtc, socketpool
+import adafruit_ntp # not in base circuitpy
 
 # initialize epaper display
 epaper_bus = fourwire.FourWire(
@@ -32,6 +37,11 @@ button_b = digitalio.DigitalInOut(board.IO21)
 button_b.direction = digitalio.Direction.INPUT
 button_b.pull = digitalio.Pull.UP
 
+# wifi things
+
+wifi_ssid = os.getenv("CIRCUITPY_WIFI_SSID")
+wifi_password = os.getenv("CIRCUITPY_WIFI_PASSWORD")
+
 # important variables
 
 ideal_time = time.monotonic()
@@ -48,6 +58,31 @@ async def update_time():
         face = displayio.Group()
         face.append(label.Label(terminalio.FONT, time_string, 0x000000))
 
+# Function for syncing NTP
+
+async def sync_ntp():
+    face = displayio.Group()
+
+    try:
+        wifi.radio.connect(wifi_ssid, wifi_password)
+        ntp = adafruit_ntp.NTP(socketpool.SocketPool(wifi.radio), tz_offset=5, cache_seconds = 3600) # 1 hour cache is dummy, will be called once and reinitialized every 6 hours for now
+        rtc.RTC().datetime = ntp.datetime
+        actual_time = ntp.datetime
+        del ntp
+        # Actual time & monotonic are from some random point in time, so ideal is reset instead
+        ideal_time = time.monotonic() # 12am coding moment
+    except ConnectionError:
+        face.append(label.Label(terminalio.FONT, "CONNECTION ERROR", 0x000000))
+
+
+    
+    time_string = time.strptime("%H:%M %p", time.localtime(actual_time))
+    face = displayio.Group()
+    face.append(label.Label(terminalio.FONT, time_string, 0x000000))
+    face.append(label.Label(terminalio.FONT, "NTP SYNCED!", 0x000000))
+    # update display to say stuff
+
+
 # Main time loop & setting
 
 async def open(page):
@@ -62,7 +97,9 @@ async def open(page):
         case "menu":
             pass # pretend this opens the menu
         case "sync":
-            pass # sync time with ntp
+            sync_ntp()
+            # sync time with ntp (not really done)
+
 
 
 async def keep_time(): # constantly running loop that tracks time with time.monotonic and updates the actual time which is fetched from ntp accordingly
@@ -83,8 +120,9 @@ while True:
     asyncio.run(keep_time())
 
     # check every second if button B is pressed and not on menu, if so will open menu
-    if not button_b.value and current_face != "menu":
-        open("menu")
+    if not button_b.value and current_face != "menu": # syncs NTP instead for testing
+        # open("menu")
+        sync_ntp()
     # button functions for menu (i friggin miss event listeners)
     elif current_face == "menu":
         if not button_b.value:

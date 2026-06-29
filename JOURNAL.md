@@ -387,3 +387,12 @@ There was going to be a lapse today but it ended up being 30 minutes of googling
 ![I guess things are moving](Journal/06-27-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 6/28: Final cleanups (I can almost smell completion)
+
+Yeah just that. Asides from resizing and fixing the silkscreens to fit in the new PCB, I also redid the entire case again, with the same issues as earlier for some reason. That problem was solved the same way I did earlier, just deleting the broken step and its children and completely redoing them because they weren't too bad anyway. I'm still not sure about the crystal but hopefully someone near me has one of those books of like 5 million capacitors in case 5pF is too much for the PCB strays. I'm really trying to prep this for submission so I also locked in and did the NTP part of the firmware, which pretty much connects, syncs, and resets the time keeping variables. I think that this (untested) MVP is good enough for submission, and all I have to do is finish up the README because I forgot about that. It's been a fun ride and I can't wait to get to building... after I finish Horizons.
+
+Lapse: https://lapse.hackclub.com/timelapse/0Dy9kjftBa4Z
+
+![New case](Journal/06-28-26(1).png)
+![Final PCB](Journal/06-28-26(2).png)
