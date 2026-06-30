@@ -1,32 +1,34 @@
-# Neutron e-paper watch
+# Neutron e-paper watch - (relatively) low-cost interactive e-paper wristwatch for the nerdy
 
 A developer/tech nerd friendly wristwatch powered by an ESP32 S3 MINI 1, uses an e-paper display for power efficiency, and a 2000mAh battery for all-day use. It's supposed to provide both the features that a regular watch is supposed to have, while also having smartwatch functions and IO pins to leverage the power of the ESP32 microcontroller. I really wanted to make myself a wristwatch that I could use and carry around in everyday life. I was initially inspired by that really expensive and prebuilt CircuitMess watch, but it lacked the DIY process and developer tools that I wanted (so no PineTime from Flavortown either). I also was bored and wanted to make another hardware project after Hackpad, and I started noticing how much I needed a watch because I got used to borrowing my mom's and forgetting the time afterward. Plus, it just looks cool. The e-paper screen was added for the power advantage over OLED, not drawing power asides from time changes. It made the driver bit more complex (because I didn't want to occupy more space with a drop-in driver module), but might have some orientation issues. The battery was initially going to be 500mAh, but that was much too little and I chose a much larger battery to carry a charge that should last all day at the cost of more space. I think that this will be a rewarding project and a well-functioning timepiece, but that will be settled after I order. 
 
 Current features: 
 - 1.54 inch e-paper display
-- 2000 mAh Li-po battery which will give around 15-20 hours of battery life (hopefully), orange LED charging indicator
+- 1200 mAh Li-po battery which should have about a full day's worth of life, orange LED charging indicator
+- Automatic device sleeping when not used (this takes advantage of the e-paper display to keep displaying time)
 - USB-C charging and data transfer
-- ESP32 S3 MINI 1 powered, so it has internect connectivity
-- Automatically syncs time with NTP every 12 hours (planned in firmware)
+- ESP32 S3 MINI 1 powered, for internet and Bluetooth
+- Automatically syncs time with NTP every 6 hours (planned in firmware)
 - 8-pin female IO pin row, with 1 ground, 1 3.3v, and 6 IO pins.
 - 2 IO buttons, labeled A and B in the style of the Game Boy
 - Reset and boot buttons for programming
 - Hopefully won't explode (IMPORTANT)
+- Hopefully won't revolt and kill me (ALSO IMPORTANT)
 
 Firmware is currently untested (asides from the timekeeping loop) and is only there for submission purposes. It is currently in CircuitPython but I will probably rewrite it in C at one point.
 
-Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, apply Kapton tape to the side of the battery that will lie in contact with the board, apply Kapton tape to backside of e-paper screen, use DOUBLE SIDED FOAM TAPE???
+Assembly notes (so far): Snip off legs on JST-PH receptacle after soldering, apply Kapton tape to the side of the battery that will lie in contact with the board, apply Kapton tape to backside of e-paper screen, use DOUBLE SIDED FOAM TAPE??? PCB should snap into case
 
-## Schematic (image outdated, will be updated once complete due to frequent revisions)
+## Schematic
 
 ![schematic image ooh cool](PCB/schematic_image.png)
 
-## PCB (image outdated, will be updated once complete due to frequent revisions)
+## PCB
 Note: the PCB is 75x40mm
 
 ![pcb image ooh cool](PCB/PCB_image.png)
 
-## Case (image outdated, will be updated once complete due to frequent revisions)
+## Case
 
 ![case image ooh cool](Case/case_image.png)
 
@@ -37,20 +39,20 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |Part|Quantity|Reference|Link|Price per unit (as of completion)|Price for all of part, including bulk ordering discounts|
 |---|---|---|---|---|---|
 |ESP32-S3-MINI-1-N8 microcontroller|1|U1|(LCSC) https://www.lcsc.com/product-detail/C2913206.html|$4.73|$4.73|
-|1200 mAh 603450 Lithium-ion polymer battery|1|N/A| (Amazon, but use anywhere) https://www.amazon.com/1200mAh-Battery-Rechargeable-Lithium-Connector/dp/B09FLG39NX|$8.99|$8.99|
+|1200 mAh 603450 Lithium-ion polymer battery|1|N/A| (YDL, but use anywhere) https://ydlbattery.com/products/100pcs-3-7v-1200mah-603450-lithium-polymer-battery|$3.00|$3.00|
 |1.54 inch e-paper display (no breakout)|1|N/A| (Waveshare) https://www.waveshare.com/product/1.54inch-e-paper.htm|$5.99|$5.99|
 |24-pin ribbon cable connector, .5mm|1|J5| (LCSC) https://www.lcsc.com/product-detail/C262567.html|$0.13|$0.65*|
 |USB-C right-angle receptacle|1|J4 or USB-C| (LCSC) https://www.lcsc.com/product-detail/C2988369.html|$0.09|$0.44*|
-|FC-135 32.7680KA-A5 32kHz crystal oscillator|1|Y1|?|?|?|
+|FC-135 32.7680KA-A5 32kHz crystal oscillator|1|Y1| (Digikey) https://www.digikey.com/en/products/detail/epson/FC-135-32-7680KA-A5/5259895|$0.47|$0.47|
 |SMD push button|4|SW1-4: A, B, BOOT, RESET| (LCSC) https://www.lcsc.com/product-detail/C455280.html|$0.06|$0.63*|
 |MCP73831-OT battery charging IC|1|U2| (Digikey) https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301|$0.76|$0.76|
-|RT9080-33GJ5 LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|$0.28|
+|RT9080-33GJ5 3.3V LDO IC|1|U3| (Digikey) https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634|$0.28|$0.28|
 |Si1308EDL N-channel MOSFET|1|Q1| (Digikey) https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435 [Change to BE3 if out of stock]|$0.62|$0.62|
 |0603 SMD orange LED|1|D2| (Digikey) https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953|$0.14|$0.14|
 |JST-PH 2-pin right-angle receptacle|1|J3| (Digikey) https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626|$0.11|$0.11|
-|4.7 uF 0805 SMD capacitor|4|C1, C2, C12| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.44|
+|4.7 uF 0805 SMD capacitor|3|C1, C2, C12| Generic component, can be from any source, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902|$0.11|$0.33|
 |1 uF 0805 SMD capacitor|12|C3-11, C13-15| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724|$0.10|$0.59|
-|0.1 uF 0805 SMD capacitor|1|C16| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.10|
+|0.1 uF 0805 SMD capacitor|2|C16, C20| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661|$0.10|$0.20|
 |22uF 0805 SMD capacitor|1|C17| Generic component, (Digikey) https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A226KQCLRNC/5961171|$0.14|$0.14|
 |15pF? 0805 SMD capacitor|2|C18, C19| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/CC0805JPNPO9BN150/11491074|$0.10|$0.20| 
 |2k ohm 0603 SMD resistor|1|R3| Generic component, (Digikey) https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF2001V/196183|$0.10|$0.10|
@@ -60,9 +62,11 @@ Electronics: (I might change a few links to AliExpress but I feel like these are
 |5.1k ohm 0603 resistor|2|R7, R8| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268|$0.10|$0.20|
 |500 ohm 0603 resistor|1|R4| Generic component, (Digikey) https://www.digikey.com/en/products/detail/yageo/RT0603BRD07500RL/17019950|$0.10|$0.10|
 |10m ohm 0603 resistor|1|R9| Generic component, (Digikey) https://www.digikey.com/en/products/detail/susumu/RL0816T-R010-F/2734741|$0.27||$0.27|
-|68 uH SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|$0.11|$1.13|
+|68 uH 6x6mm SMD inductor|1|L1| Generic component, (LCSC) https://www.lcsc.com/product-detail/C168091.html|$0.11|$1.13|
 |MBR0530T3G Schottky diode|5|D1, D2-6| (Digikey) https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144|$0.29|$1.45|
-|(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Female is probably the best idea to protect against short circuits) (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/sullins-connector-solutions/NPPN081BFCN-RC/804810|$0.85??????????????|
+|(Optional) 1x8 female 2.54mm header pins, preferably low profile (for IO)|1|J2/IO pins| (Digikey, but use anything, really) https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/61300811821/17737805|$0.40|$0.40|
+
+Add another $10-20 for shipping, and about $30 for 5 ENIG-plated PCBs & shipping, and it comes to about $70, maybe. Not great but better than the CircuitMess's $130 and the PebbleTime 2's $225. 
 
 It's probably a good idea to order 1-2 extra of the small components, like the capacitors, resistors, and diodes. The crystal could also have a spare because of how easy it is to fry them
 
@@ -74,10 +78,14 @@ Non-electronics:
 - (Optional but probably needed) PCB coating for waterproofing 
 - Kapton tape for electronic insulation and protecting some components
 
-## Credits:
+## Extra Credits:
 
 yassin for looking over my battery circuit and pointing out that I tried to shove 5v into 3v3 (I know I'm an idiot) and looking at my crystal
+
 Kai Pereira for responding to my questions on the hardware slack and for his Overglade badge which I used as a bit of a reference to make sure I'm not doing anything stupid with the e-paper
-Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that, do NOT give me any credit for that) (I cannot stress enough that all credit should go to them because I literally do not know anything about e-paper displays. Heck, the entire project is literally like 3 example schematics that are wired together in a way that looks like it works. I hope I know what I'm doing and I will binge a BUNCH of high-school-level electronics courses afterward.)
+
+Waveshare for their e-paper driver (pretty much dropped in the entire schematic for that but removed the compability switches, do NOT give me any credit for that) (I cannot stress enough that all credit should go to them because I literally do not know anything about e-paper displays. Like, I understand a bit about what the parts are doing but not too much, really. That's my fault.)
+
 Matters of Intrigue for a good video on the ESP32 S3's timing (https://www.youtube.com/watch?v=fZAR8WTKiSg)
-The OCGC Google Chat (a bunch of my friends) for name help
+
+OCGC (a bunch of my friends shoved onto a Google Chat) for name help

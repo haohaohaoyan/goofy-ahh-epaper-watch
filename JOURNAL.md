@@ -396,3 +396,15 @@ Lapse: https://lapse.hackclub.com/timelapse/0Dy9kjftBa4Z
 
 ![New case](Journal/06-28-26(1).png)
 ![Final PCB](Journal/06-28-26(2).png)
+
+**Total time spent: 1.7 hours**
+
+# 6/29: One last round
+
+I'm pretty must just checking everything to make sure that I can submit and it'll go through. I filled in the missing links and made sure that my part counts were right (some of them were like 1 off). The battery was also changed to be from YDL, which had a listed cost of $3. That's quite an improvement over the initial $12.50 for the 2000mAh battery I once had. I also regenerated the gerbers because I think I forgot to zip them last time. I was pretty sleepy yesterday so I forgot to put in the total time, so in it goes. Reading the submission requirements, I'm pretty sure I've checked off all of the boxes. The only thing I'm not sure about is if it's ok to have the BOM in the README instead of in a .csv, but I tossed that into #forge-help and hopefully it's ok. I'm going to log today and then hopefully get to submit tomorrow if I don't need any changes.
+
+I don't even know what to put as the image. I guess I can shove the JLC quote in...
+
+![JLC quote](Journal/06-29-26.png)
+
+**Total time spent: 0.5 hours**
