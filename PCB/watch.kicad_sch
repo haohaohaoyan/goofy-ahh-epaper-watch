@@ -6041,12 +6041,6 @@
 		(uuid "223687fb-f2b8-4928-b537-0a5b4364adf4")
 	)
 	(junction
-		(at 124.46 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24d06138-53aa-42c9-bd0b-f47e5da9ede4")
-	)
-	(junction
 		(at 86.36 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6456,7 +6450,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 152.4) (xy 124.46 152.4)
+			(xy 110.49 152.4) (xy 139.7 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6613,16 +6607,6 @@
 			(type default)
 		)
 		(uuid "3035004f-5e1d-4fe3-be80-0a5533c81f62")
-	)
-	(wire
-		(pts
-			(xy 129.54 152.4) (xy 130.81 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33abfa0a-c87b-40ea-9f0a-3a6d068f5fa2")
 	)
 	(wire
 		(pts
@@ -7766,16 +7750,6 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 152.4) (xy 129.54 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e57671ec-a0e9-48ca-bfc5-1ab3696fc45e")
-	)
-	(wire
-		(pts
 			(xy 255.27 38.1) (xy 262.89 38.1)
 		)
 		(stroke
@@ -7843,16 +7817,6 @@
 			(type default)
 		)
 		(uuid "eac3384c-3891-491c-94e7-4d9b22bc7b4d")
-	)
-	(wire
-		(pts
-			(xy 143.51 152.4) (xy 146.05 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebc9bac9-9330-4ec7-8f77-f4d5a2dbf8d5")
 	)
 	(wire
 		(pts
@@ -9346,7 +9310,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_02x01_MountingPin")
-		(at 135.89 152.4 0)
+		(at 139.7 160.02 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9356,7 +9320,7 @@
 		(dnp no)
 		(uuid "27fa5522-f35d-42ee-a487-6f2969c205a2")
 		(property "Reference" "J3"
-			(at 135.89 146.304 0)
+			(at 132.842 147.574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9366,7 +9330,7 @@
 			)
 		)
 		(property "Value" "Battery JST-PH connector"
-			(at 147.574 148.59 0)
+			(at 144.272 149.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9376,7 +9340,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-			(at 135.89 152.4 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9387,7 +9351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 152.4 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9398,7 +9362,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 135.89 152.4 0)
+			(at 139.7 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9581,7 +9545,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 156.21 0)
+		(at 129.54 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9591,7 +9555,7 @@
 		(dnp no)
 		(uuid "3b577ce1-e513-4cbc-99e4-910fcf465829")
 		(property "Reference" "C2"
-			(at 116.332 155.194 0)
+			(at 121.412 155.194 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9602,7 +9566,7 @@
 			)
 		)
 		(property "Value" "4.7uf"
-			(at 116.332 157.734 0)
+			(at 121.412 157.734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9613,7 +9577,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 125.4252 160.02 0)
+			(at 130.5052 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9624,7 +9588,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 156.21 0)
+			(at 129.54 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9635,7 +9599,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 124.46 156.21 0)
+			(at 129.54 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9898,7 +9862,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 152.4 0)
+		(at 139.7 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9906,10 +9870,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4096de23-a308-4b26-8a37-b6cc5a9af2d8")
 		(property "Reference" "#PWR016"
-			(at 146.05 158.75 0)
+			(at 139.7 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9920,7 +9883,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 153.6699 0)
+			(at 137.668 169.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9931,7 +9894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 152.4 0)
+			(at 139.7 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9942,7 +9905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 152.4 0)
+			(at 139.7 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9953,7 +9916,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 152.4 0)
+			(at 139.7 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10055,7 +10018,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 160.02 0)
+		(at 129.54 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10066,7 +10029,7 @@
 		(fields_autoplaced yes)
 		(uuid "43c8d1d6-3ea1-49f0-800e-6ea7f56aa1dc")
 		(property "Reference" "#PWR019"
-			(at 124.46 166.37 0)
+			(at 129.54 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10077,7 +10040,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 165.1 0)
+			(at 129.54 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10087,7 +10050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 160.02 0)
+			(at 129.54 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10098,7 +10061,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 160.02 0)
+			(at 129.54 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10109,7 +10072,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 160.02 0)
+			(at 129.54 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

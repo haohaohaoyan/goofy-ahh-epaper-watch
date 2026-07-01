@@ -408,3 +408,13 @@ I don't even know what to put as the image. I guess I can shove the JLC quote in
 ![JLC quote](Journal/06-29-26.png)
 
 **Total time spent: 0.5 hours**
+
+# 6/30: Forgot the BOM.csv... also added 3D models to PCB and fixed a few things that I noticed during cleanup
+
+Nobody's on #forge-help so I just made the BOM anyway. While looking through the parts and verifying them, I found quite a few errors and fixed them along the way, which also created PCB Revision #7.1. The battery supplier I had chosen earlier had an MOQ of 4 (should've been obvious from the price) so I switched to a much more expensive Amazon equivalent (still trying to see if I can get the better deal). Since the Adafruit batteries had reversed polarity compared to most JST-PH-terminated batteries (ground on right when slot is up instead of on left), I had to reverse those on the board too. I could just disassemble the connector and reconnect in the working way, but that isn't very convenient, is it? The rest of the BOM did make sense though, and came to $57.66 without shipping, and I can assume somewhere around $20 for shipping on the good side... that isn't too good. It's still better than the watches I got inspo from, though. I also wanted to finish the 3D model of the PCB, so I used easyeda2kicad, an INCREDIBLY convenient Python tool, and dropped them in the libraries folder. It's looking pretty good! Now that I FINALLY have all of the things required for submission, I'm going to go for review. It's been a nice run!
+
+No lapse because I assumed that it would be a matter of minutes.
+
+![PCB model!](Journal/06-30-26.png)
+
+**Total time spent: 1.5 hours**
