@@ -64,6 +64,7 @@ async def sync_ntp():
     face = displayio.Group()
 
     try:
+        # RTC module isn't included yet, that's in a package and this was from when the external crystal was automatically supported
         wifi.radio.connect(wifi_ssid, wifi_password)
         ntp = adafruit_ntp.NTP(socketpool.SocketPool(wifi.radio), tz_offset=5, cache_seconds = 3600) # 1 hour cache is dummy, will be called once and reinitialized every 6 hours for now
         rtc.RTC().datetime = ntp.datetime

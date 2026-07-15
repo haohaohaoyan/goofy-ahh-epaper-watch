@@ -418,3 +418,53 @@ No lapse because I assumed that it would be a matter of minutes.
 ![PCB model!](Journal/06-30-26.png)
 
 **Total time spent: 1.5 hours**
+
+# 7/3 (Overtime): Changing the inductor to a smaller one
+
+(This journal is written in hindsight. I expected to write it earlier but the overtime work stretched out VERY far.)
+
+RIGHT after submitting for review, I decided to change the inductor to something that wasn't 4 millimeters tall. This involved a LOT of checking because the other e-paper boards I was using as reference used that old 68uH inductor, and I wanted a smaller one. I got a 47uH inductor instead (GoodDisplay's universal driver used one) and it shrank to 4x4mm with 1.50mm height, which was a fantastic improvement. However, I noticed afterward that the resistance was too high (around 700 mOhms) compared to the old inductor's 360 or so mOhms, which was probably dangerous (according to research). While I was deciding on how to solve this, I looked at other e-paper projects and noticed that some of them used 10uH inductors instead, and those would obviously be smaller. The Adafruit & GoodDisplay 1.54inch-specific drivers both used a 10uH inductor, so I decided to slap one from Bourns in. The footprint was also exact to the pad & didn't leave any breathing room so I expanded it manually.
+
+The image is taken from the Lapse, because I forgot to take one on the day of.
+
+Lapse: https://lapse.hackclub.com/timelapse/x4YiVWoyFXRB
+
+![Inductor I guess](Journal/07-03-26.png)
+
+**Total time spent: 1.4 hours**
+
+# 7/9 (Overtime): Swapping the crystal for a more reliable RTC
+
+(This journal is written in hindsight. I expected to write it earlier but the overtime work stretched out VERY far.)
+
+Considering how I needed this thing to be at least somewhat precise while having the ESP32 in sleep mode, I figured that guessing the PCB stray capacitance for the crystal wouldn't suffice. I decided to switch back to a dedicated RTC that would probably be better at not dropping more than a minute over 6 hours. It actually took much longer than I thought to find a suitable RTC, because most of them either were way too expensive (WHY is the DS3231 TWELVE DOLLARS) or didn't even have the built in crystal I was looking for. I decided to use the RV-3028-C7 because of its form factor, relative cheapness, and ACTUAL BUILT IN CRYSTAL. However, the documentation was harder to navigate (It didn't have an example on how the EVI pin should be connected when unused) but I fixed the schematic eventually by pulling it down through a 10k resistor. I had to dig DEEP into those datasheets because for some reason most of the example applications were in the middle of the manual.
+
+Lapse: https://lapse.hackclub.com/timelapse/x2_YYgDoQsVR
+
+![RTC schematic](Journal/07-09-26.png)
+
+**Total time spent: 1.3 hours**
+
+# 7/10 (Overtime): ESD to make sure the device doesn't instantly combust when I touch it
+
+(This journal is written in hindsight. I expected to write it earlier but the overtime work stretched out VERY far.)
+
+I decided to look at the Orpheus Pico again as an example, and found an ESD diode array in there. Curious about it, I googled it and it turns out THAT is what's necessary to prevent the board from immediately exploding if I touch it with static??? Since it was a wearable and would face contact often, I made the good decision of deciding to add ESD. The USBLC6-2SC6 wasn't hard to implement, but I spent too much time looking for a cheaper alternative. I also rearranged the schematic to fit it alongside the other USB-C specific components. I also made one of the few original decisions completely authored by me in this project: adding an ESD Zener diode to the battery power line, but I didn't get to that here. Mostly just looking for alternatives to the USBLC6-2SC6.
+
+Lapse: https://lapse.hackclub.com/timelapse/r3k0T5DgpitV
+
+![New USB-C schematic](Journal/07-10-26.png)
+
+**Total time spent: 0.5 hours**
+
+# 7/14 (Overtime): Rerouting the PCB and messing around with that Zener diode
+
+(This journal was actually written on the day of.)
+
+Since I thought all of the schematic edits were done, I got to rerouting the entire PCB. The first thing I did was sticking the USB ESD in, and I had to move the trace used for the two diode power supply switching to the back of the PCB. I actually decided to flip it around to put the VBUS pin closer to the receptacle for easier connection. To bridge a few gaps between ground sources, I also added a ground plane to the back. I was initially going to use dedicated traces for that, but this seemed useful anyway. The stitching vias aren't very packed together but it should work. The power indication diode was on the other side for some reason, so I fixed that and could now remove the extra two vias because the back ground plane now connects the split in the front ground plane created by the LED traces. The Zener ESD diode for the battery was a bit hard to manage. Most of the options I saw on Digikey were EXTREMELY small, at 0201 scale. Obviously, I can't place that by hand so I dug for a suitable 0603 alternative, which I found in the GG0603052R542P by Kyocera AVX. This didn't have a built-in symbol, but since it used a common footprint I could just rename an existing bidirectional TVS diode symbol and reassign its footprint. I was quite concerned about the 16V clamping voltage, which would probably allow high voltages to completely fry my circuit. However, I wasn't nearly as concerned after seeing that the USBLC6-2SC6 had a 17V clamping voltage and it was fine. The RTC IC wasn't actually that hard to route because I just reused the traces from the crystal and used vias to the backside for the lines that needed pullup resistors. Also I found these symbols that come with KiCAD and added the smallest of the OSHW logos to the board because that's technically what it is. There was also two easter eggs in the folder (an actual easter egg and a small Blahaj) that I added to the corner of the PCB for fun. I am almost 100% sure that the thing is done now and I really just wanna finish it. 
+
+Lapse: https://lapse.hackclub.com/timelapse/BXUD6wvWUGcE
+
+![New model](Journal/07-14-26.png)
+
+**Total time spent: 2 hours**

@@ -11,23 +11,24 @@ G-Switch GT-USB-7010ASV USB-C receptacle,5 (LCSC MOQ),J4 or USB-C,https://www.lc
 JUSHUO AFC07-S24FCA-00 24-pin .5mm pitch ribbon cable connector,5 (LCSC MOQ),J5,https://www.lcsc.com/product-detail/C262567.html,LCSC,$0.13,$0.65,LCSC MOQ is 5. Make sure the contacts are on the bottom!
 MCP73831T-2ACI/OT battery charigng IC,1,U2,https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301,Digikey,$0.76,$0.76,
 RT9080-33GJ5 3.3V LDO IC,1,U3,https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634,Digikey,$0.28,$0.28,
-FC-135 32.7680KA-A5 32kHz crystal oscillator,1,Y1,https://www.digikey.com/en/products/detail/epson/FC-135-32-7680KA-A5/5259895,Digikey,$0.47,$0.47,
+RV-3028-C7 real-time clock IC,1,U4,https://www.digikey.com/en/products/detail/micro-crystal-ag/RV-3028-C7-32-768KHZ-1PPM-TA-QA/10499248,Digikey,$2.52,$2.52,
 JST-PH 2 pin right angle receptacle,1,J3,https://www.digikey.com/en/products/detail/jst-sales-america-inc/S2B-PH-K-S/926626,Digikey,$0.11,$0.11,Snip legs half off during assembly to kinda not stab the battery
+USBLC6-2CS6 USB ESD diode array,5 (LCSC MOQ),U5,https://www.lcsc.com/product-detail/C7519.html,LCSC,$0.18,$0.91,"Digikey has the same with MOQ 1 at $0.54 per, but this is like barely more expensive and has 4 extra. I'm probably going to use these with the extra USB-C plugs anyway."
 Si1308EDL N-channel MOSFET,1,Q1,https://www.digikey.com/en/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435,Digikey,$0.62,$0.62,Change from GE3 to BE3 if out of stock. They are functionallly and economically identical but GE3 is greener.
 0603 SMD orange LED,1,D2,https://www.digikey.com/en/products/detail/ams-osram-usa-inc/LO-Q976-PS-25-0-20-R18/1227953,Digikey,$0.14,$0.14,I like orange. Change it if you want.
-MBR0530T3G Schottky diode,5,"D1, D2-6",https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144,Digikey,$0.29,$1.45,
-68uH 6x6mm SMD inductor,10 (LCSC MOQ),L1,https://www.lcsc.com/product-detail/C168091.html,LCSC,$0.11,$1.13,LCSC MOQ is 10. Change to a smaller quantity if possible. The reference projects used PCBA so they wouldn't need to pay as much. 
-15 pF 0805 SMD capacitor,2,"C18, C19",https://www.digikey.com/en/products/detail/yageo/CC0805JPNPO9BN150/11491074,Digikey,$0.10,$0.20,This is assuming 5pF PCB parasitic stray capacitance! Change if crystal is inaccurate.
-0.1 uF 0805 SMD capacitor,2,"C16, C20",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661,Digikey,$0.10,$0.20,
-1 uF 0805 SMD capacitor,12,"C3-11, C13-15",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724,Digikey,$0.10,$0.59,
-4.7 uF 0805 SMD capacitor,3,"C1, C2, C12",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902,Digikey,$0.11,$0.33,
+MBR0530T3G Schottky diode,5,"D1, D3-6",https://www.digikey.com/en/products/detail/onsemi/MBR0530T3G/1477144,Digikey,$0.29,$1.45,
+GG0603052R542P ESD TVS bidirectional Zener diode,1,D7,https://www.digikey.com/en/products/detail/kyocera-avx/GG0603052R542P/14552136,Digikey,$0.23,$0.23,This was the only suitable one that was larger than an ant's torso. I want to hand solder???
+10uH 10mA SMD 276mOhm inductor,1,L1,https://www.digikey.com/en/products/detail/bourns-inc/SRN3015-100M/2756105,Digikey,$0.38,$0.38,"Larger displays require 68uH & 47uH, but mine's tiny so 10uH should be fine (it's used by GoodDisplay & Adafruit on their size-specific driver boards)"
+0.1 uF 0805 SMD capacitor,3,"C16, C18, C19",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661,Digikey,$0.10,$0.20,
+1 uF 0805 SMD capacitor,11,"C3-10, C13-15",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KAFNNNE/3886724,Digikey,$0.10,$0.54,
+4.7 uF 0805 SMD capacitor,4,"C1, C2, C11, C12",https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902,Digikey,$0.11,$0.44,
 22 uF 0805 SMD capacitor,1,C17,https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A226KQCLRNC/5961171,Digikey,$0.14,$0.14,
 3 ohm 0603 SMD resistor,1,R6,https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3GEYJ3R0V/282122,Digikey,$0.10,$0.10,
 500 ohm 0603 SMD resistor,1,R4,https://www.digikey.com/en/products/detail/yageo/RT0603BRD07500RL/17019950,Digikey,$0.10,$0.10,
 2k ohm 0603 SMD resistor,1,R3,https://www.digikey.com/en/products/detail/panasonic-industry/ERJ-3EKF2001V/196183,Digikey,$0.10,$0.10,
 4.7k ohm 0603 SMD resistor,2,"R1, R2",https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT4K70/1760998,Digikey,$0.10,$0.20,
 5.1k ohm 0603 SMD resistor,2,"R7, R8",https://www.digikey.com/en/products/detail/yageo/RC0603FR-075K1L/727268,Digikey,$0.10,$0.20,
-10k ohm 0603 SMD resistor,1,R5,https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880,Digikey,$0.10,$0.10,
-10m ohm 0603 SMD resistor,1,R9,https://www.digikey.com/en/products/detail/susumu/RL0816T-R010-F/2734741,Digikey,$0.27,$0.27,"Optional (according to Espressif docs on crystal), can be added"
-"1x8 2.54mm pitch header pins, male or female",1,J2/IO pins,https://www.digikey.com/en/products/detail/würth-elektronik/61300811821/17737805,Digikey,$0.40,$0.40,"Optional and can be left blank, really. Low profile ones are best but the regular 8.51mm inductor height ones are cheapest."
-,,,,,Total,$57.66,
+10k ohm 0603 SMD resistor,6,"R5, R9-R13",https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880,Digikey,$0.10,$0.60,
+"1x8 2.54mm pitch header pins, male or female",1,J2/IO pins,https://www.digikey.com/en/products/detail/würth-elektronik/61300811821/17737805,Digikey,$0.40,$0.40,"Optional and can be left blank, really. Low profile ones are best but the regular 8.51mm insulator height ones are cheapest."
+Shipping (estimate),N/A,N/A,All sources,All sources,$25,$25,Pretty optimistic estimate
+,,,,,Total,$85.19,
